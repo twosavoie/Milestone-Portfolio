@@ -179,12 +179,13 @@ address {
 }
 
 /* Structural Styles */
-header, footer { /* why is main  a flex container? trying removing it it was keeping the content centered */
+header, #work, #about, footer { 
   display: flex;
   justify-content: center;
   text-align: center; 
+  flex-flow: row wrap;
 }
-.content-wrapper {
+.content-wrapper { /* do I need a main-content-wrapper too */
   width: 85%;
 }
 .left-align-text {
