@@ -1,0 +1,830 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* color scheme: #f5e6eb (text) #b17fc4 (accent)  #192a51 (main background) */
+/* font family: Lexend Tera - headings, Lekton - paragraphs */
+
+:root { /* var(-- ); */
+  /* moody cheery natural */
+  --light-text: #f5e6eb; /* #fce77d #ffe8d6 */
+  --dark-text: #192a51; /* #262d53 #4a4f3e */
+  --accent: #b17fc4; /* 3e7516c #8cd2b4 */
+  --dark-primary: #192a51; /* #262d53 #4a4f3e */
+  --light-primary: #f5e6eb; /* #fce77d #ffe8d6 */
+  --hero: url("../img/");
+  /* don't forget to change the Google Font links in the head */
+  --p-font:'Lekton', sans-serif; /* Nunito Sans */
+  --header-font: 'Lexend Tera', sans-serif; /* Alata */
+}
+
+/* General Styles */
+html {
+	font-size: 16px;
+}
+body {
+  font-size: 1em;
+  font-family: var(--p-font);
+  color: var(--dark-text);
+}
+ul, 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+a {
+  color: var(--light-text);
+  text-decoration: none;
+}
+h1 {
+  color: var(--light-text);
+  font-family: var(--header-font);
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 100% /* here or in individual sections? */
+}
+h2 {
+  color: var(--light-text);
+  font-family: var(--header-font);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+.project-link, .skills-text p {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.about-info h4, .contact-title {
+  font-weight: 400;
+}
+h3, 
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+  line-height: 1.5;
+  width: 100%
+}
+p, li {
+  font-size: 1rem;
+  line-height: 1.5; 
+}
+span {
+  font-weight: bold;
+}
+img {
+ width: 100%;
+}
+figure {
+ margin: 0; 
+}
+address {
+  font-style: normal; 
+}
+
+/* Structural Styles */
+header, footer { /* why is main  a flex container? trying removing it it was keeping the content centered */
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+}
+.content-wrapper {
+  width: 85%;
+}
+.left-align-text {
+  text-align: left; 
+}
+
+/* set the margins for each section - these are only a suggestion :) */
+/* setting all margins to zero removes all browser added default margins */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+/* then can set the margin for any element */
+nav {
+  margin: 30px 0 60px 0;
+}
+#work, #about, footer {
+  margin: 80px 0;
+}
+footer {
+  margin-bottom: 60px;
+}
+h2 {
+  margin: 30px 0;
+}
+h4 {
+  margin: 0 0 40px 0;
+}
+.project-description {
+  margin: 0 0 30px 0;
+}
+.project-link {
+  margin: 40px 0;
+}
+figure, .language-wrapper {
+  margin: 20px 0;
+}
+.about-info h3 {
+  margin: 40px 0 60px 0;
+}
+.about-text {
+  margin: 0 0 30px 0;
+}
+.contact-info {
+  margin: 60px 0;
+}
+.contact-title {
+  margin: 0 0 30px 0;
+}
+
+/* -------------------- Base Header Styles -------------------- */
+
+header {
+  background-color: var(--dark-primary);
+/*  height: 800px;
+  background: var(--hero); 
+  background-size: cover;
+  background-position: center; */
+}
+header nav ul li {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+header h1 {
+  width: 100%; /* not content wrapper branch */
+}
+header h2 {
+  width: 100% /* not content wrapper branch */
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Portfolio */
+#work {
+  width: 100%;
+}
+#work h3 {
+  width: 100%;
+}
+.work-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*flex-flow: row wrap; */
+  flex-direction: column;
+}
+.home-portfolio-piece figure {
+  width: 100%
+}  
+
+/* Skills */
+.tool-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.tool {
+  width: 45%
+}
+
+/* About */
+#about {
+  width: 100%;
+  background-color: var(--dark-primary);
+}
+#profile-image {
+  width: 90%;
+  border: 12px solid white; /* change to white */
+}
+#about h3, #about h4, #about p {
+  color: var(--light-text);
+}
+
+/* -------------------- Base Header Styles -------------------- */
+
+footer h4 { /* what here works? */
+  width: 100%;
+}
+footer .follow-section {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: center; 
+  width: 100%;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul {
+  width: 100%;
+}
+footer .social-icons li {
+  background-color: var(--accent);  
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+footer .social-icons li i {
+  font-size: 1.3125em;
+  color: var(--dark-text);
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   @media only screen and (min-width:768px) {
+    /*Tablet styles here*/
+  
+    /* General styles */
+    /*.content-wrapper, */.work-content-wrapper, .about-content-wrapper { /* rethink */
+      max-width: 640px;
+    } 
+
+    /* font styles */
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    h4 {
+      font-size: 1.25rem;
+    }
+    h5 {
+      font-size: 1.875rem;
+    }
+
+    /* element margins */
+    /* the list element have 20px of bottom margin already */
+    nav {
+      margin: 60px 0 80px 0;
+    }
+    #work, #about, footer {
+      margin: 120px 0;
+    }
+    footer {
+      margin-bottom: 80px;
+    }
+    h2 {
+      margin: 80px 0;
+    }
+    .portfolio-header {
+      margin: 0 0 60px 0;
+    }
+    h4 {
+      margin: 0 0 40px 0;
+    }
+    .project-description {
+      margin: 0 0 30px 0;
+    }
+    .project-link {
+      margin: 40px 0 60px 0;
+    }
+    .skills-header {
+      margin: 20px 0 40px 0;
+    }
+    figure {
+      margin: 20px 0;
+    }
+    .language-wrapper {
+      margin: 40px 0;
+    }
+    .about-info h3 {
+      margin: 80px 0;
+    }
+    .about-info h4 {
+      margin: 0 0 60px 0;
+    }
+    .about-text {
+      margin: 0 0 30px 0;
+    }
+    .contact-info {
+      margin: 80px 0;
+    }
+    .contact-title {
+      margin: 0 0 30px 0;
+    }
+
+    /* header */
+    header .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+    .home-title {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .home-title h2 {
+      max-width: 80%;
+    }
+
+    /* portfolio */
+    .portfolio-wrapper {
+      justify-content: space-around;
+    }
+    .home-portfolio-piece {
+      width: 45%;
+      align-items: center;
+    }
+    .project-description {
+      width: 90%;
+    }
+
+    /* skills */
+    .skills-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+    .language-wrapper, .tool-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-flow: row wrap;
+      text-transform: uppercase;     
+    }
+    .tool {
+      width: auto;
+    }
+
+    /* about */    
+    .about-content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    } 
+    #about figure {
+      width: 60%;
+    } 
+    .about-info h4 {
+      text-align: left;
+    }
+    
+    /* Footer */
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact-info {
+      width: 100%;
+    }  
+    footer ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; 
+      width: 100%;
+    }  
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
+    }    
+    footer .copyright {
+      width: 100%;
+    }  
+}
+
+
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
+  /*.content-wrapper,*/ .work-content-wrapper, .about-content-wrapper { /* rethink */
+    max-width: 1450px; 
+  } 
+
+  /* font styles */
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .about-info h3 {
+    font-size: 4rem;
+    text-align: left;
+  }
+  .about-info h4 {
+    font-size: 2rem;
+  }
+
+  /* element margins */
+    /* the list element have 20px of bottom margin already */
+    nav {
+      margin: 80px 0;
+    }
+    header {
+      margin-bottom: 140px;
+    }
+    #work { /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
+      margin-top: 140px;
+      margin-bottom: 140px;
+    }
+    #about {
+      margin-top: 140px;
+      margin-bottom: 160px;
+    }
+    footer {
+      margin: 160px 0 140px 0;
+    }
+    h2 {
+      margin: 40px 0 0 0;
+    }
+    .portfolio-header {
+      margin: 0 0 80px 0;
+    }
+    h4 {
+      margin: 0 0 40px 0;
+    }
+    .project-description {
+      margin: 0 0 30px 0;
+    }
+    .project-link {
+      margin: 40px 0 120px 0;
+    }
+    .skills-header {
+      margin: 40px 0 40px 0;
+    }
+    figure {
+      margin: 0;
+    } 
+    .language-wrapper {
+      margin: 40px 0;
+    }
+    .about-info h3 {
+      margin: 0;
+    } 
+    .about-info h4 {
+      margin: 40px 0;
+    }
+    .about-text {
+      margin: 0 0 30px 0;
+    }
+    .contact-info {
+      margin: 80px 0 40px 0;
+    }
+    .contact-title {
+      margin: 0 0 30px 0;
+    }
+
+  /* header */
+  header .content-wrapper {
+    justify-content: flex-end;
+  }
+  header nav {
+    justify-content: flex-end;
+    width: 45%;
+  }
+  .home-title {
+    max-width: 95%;
+  }
+  .home-title h2 {
+    max-width: 70%;
+  }
+  /* portfolio */
+  .home-portfolio-piece {
+    width: 30%;
+  }
+
+  /* about */
+  .about-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about figure {
+    width: 35%;
+    margin-top: 0;
+  } 
+
+  .about-info {
+    width: 58%;
+  }
+  
+  /* contact */
+  footer .content-wrapper {
+    max-width: 70%;
+  }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  
+  
+}
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
