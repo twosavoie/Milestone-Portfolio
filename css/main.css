@@ -201,17 +201,26 @@ p {
   margin: 0;
 }
 /* then can set the margin for any element */
-nav {
-  margin: 30px 0 60px 0;
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-#work, #about, footer {
+nav {
+  margin-bottom: 60px;
+}
+#work {
   margin: 80px 0;
 }
+#about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 footer {
+  margin-top: 80px;
   margin-bottom: 60px;
 }
 h2 {
-  margin: 30px 0;
+  margin-top: 30px;
 }
 h4 {
   margin: 0 0 40px 0;
@@ -461,17 +470,24 @@ footer .social-icons li i {
 
     /* element margins */
     /* the list element have 20px of bottom margin already */
-    nav {
-      margin: 60px 0 80px 0;
+    header {
+      padding-bottom: 80px;
     }
-    #work, #about, footer {
+    nav {
+      padding-top: 60px;
+      margin: 0 0 80px 0;
+    }
+    #work, footer {
       margin: 120px 0;
+    }
+    #about {
+      padding: 120px 0;
     }
     footer {
       margin-bottom: 80px;
     }
     h2 {
-      margin: 80px 0;
+      margin-top: 80px;
     }
     .portfolio-header {
       margin: 0 0 60px 0;
@@ -635,11 +651,12 @@ footer .social-icons li i {
 
   /* element margins */
     /* the list element have 20px of bottom margin already */
-    nav {
-      margin: 80px 0;
-    }
     header {
+      padding-top: 80px;
       padding-bottom: 140px;
+    }
+    nav {
+      margin-bottom: 80px;
     }
     #work { /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
       margin-top: 140px;
