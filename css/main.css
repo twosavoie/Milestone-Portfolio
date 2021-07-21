@@ -89,45 +89,60 @@ textarea {
 /* color scheme: #f5e6eb (text) #b17fc4 (accent)  #192a51 (main background) */
 /* font family: Lexend Tera - headings, Lekton - paragraphs */
 
-:root { /* var(-- ); */
+/* perhaps instead of light and dark, choose primary/secondary... so when a change is made, it's made her and carries through below */
+:root {
+  /* var(-- ); */
   /* moody cheery natural */
-  --light-text: #f5e6eb; /* #fce77d #ffe8d6 */
-  --dark-text: #192a51; /* #262d53 #4a4f3e */
-  --accent: #b17fc4; /* 3e7516c #8cd2b4 */
-  --dark-primary: #192a51; /* #262d53 #4a4f3e */
-  --light-primary: #f5e6eb; /* #fce77d #ffe8d6 */
+  --light-text: #f5e6eb; /* moody */
+  /* #fce77d /* cheery */ /* #ffe8d6 /* natural */
+  --dark-text: #192a51;
+  /* #262d53 #4a4f3e */
+  --accent: #b17fc4;
+  /* 3e7516c #8cd2b4 */
+  --dark-primary: #192a51;
+  /* #262d53 #4a4f3e */
+  --light-primary: #f5e6eb;
+  /* #fce77d #ffe8d6 */
   --hero: url("../img/");
   /* don't forget to change the Google Font links in the head */
-  --p-font:'Lekton', sans-serif; /* Nunito Sans */
-  --header-font: 'Lexend Tera', sans-serif; /* Alata */
+  --p-font: 'Lekton', sans-serif;
+  /* Nunito Sans */
+  --header-font: 'Lexend Tera', sans-serif;
+  /* Alata */
 }
 
 /* General Styles */
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
+
 body {
   font-size: 1em;
   font-family: var(--p-font);
   color: var(--dark-text);
 }
-ul, 
+
+ul,
 ol {
   list-style-type: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
-a { /* might need to be more specific */
+
+a {
+  /* might need to be more specific */
   color: var(--light-text);
   text-decoration: none;
 }
+
 h1 {
   color: var(--light-text);
   font-family: var(--header-font);
   font-size: 2rem;
   line-height: 1.5;
-  width: 100% /* here or in individual sections? */
+  width: 100%
 }
+
 h2 {
   color: var(--light-text);
   font-family: var(--header-font);
@@ -136,24 +151,32 @@ h2 {
   width: 100%;
   font-weight: 400;
 }
+
 h3 {
   font-size: 1.75rem;
 }
+
 h4 {
   font-size: 1.25rem;
 }
+
 h5 {
   font-size: 1.5rem;
 }
-.project-link, .skills-text p {
+
+.project-link,
+.skills-text p {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: bold;
 }
-.about-info h4, .contact-title {
+
+.about-info h4,
+.contact-title {
   font-weight: 400;
 }
-h3, 
+
+h3,
 h4,
 h5,
 h6 {
@@ -161,88 +184,121 @@ h6 {
   line-height: 1.5;
   width: 100%
 }
-p, li {
+
+p,
+li {
   font-size: 1rem;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
+
 span {
   font-weight: bold;
 }
+
 img {
- width: 100%;
+  width: 100%;
 }
+
 figure {
- margin: 0; 
+  margin: 0;
 }
+
 address {
-  font-style: normal; 
+  font-style: normal;
 }
 
 /* Structural Styles */
-header, #work, #about, footer { 
+header,
+#work,
+#about,
+footer {
   display: flex;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
   flex-flow: row wrap;
 }
-.content-wrapper { /* do I need a main-content-wrapper too */
+
+.content-wrapper {
+  /* do I need a main-content-wrapper too */
   width: 85%;
 }
+
 .left-align-text {
-  text-align: left; 
+  text-align: left;
 }
 
 /* set the margins for each section - these are only a suggestion :) */
 /* setting all margins to zero removes all browser added default margins */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
+
 p {
   margin: 0;
 }
+
 /* then can set the margin for any element */
 header {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 nav {
   margin-bottom: 60px;
 }
+
 #work {
   margin: 80px 0;
 }
+
 #about {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 footer {
   margin-top: 80px;
   margin-bottom: 60px;
 }
+
 h2 {
   margin-top: 30px;
 }
+
 h4 {
   margin: 0 0 40px 0;
 }
+
 .project-description {
   margin: 0 0 30px 0;
 }
+
 .project-link {
   margin: 40px 0;
 }
-figure, .language-wrapper {
+
+figure,
+.language-wrapper {
   margin: 20px 0;
 }
+
 .about-info h3 {
   margin: 40px 0 60px 0;
 }
+
 .about-text {
   margin: 0 0 30px 0;
 }
+
 .contact-info {
   margin: 60px 0;
 }
+
 .contact-title {
   margin: 0 0 30px 0;
 }
@@ -251,21 +307,26 @@ figure, .language-wrapper {
 
 header {
   background-color: var(--dark-primary);
-/*  height: 800px;
+  /*  height: 800px;
   background: var(--hero); 
   background-size: cover;
   background-position: center; */
 }
+
 header nav ul li {
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 header h1 {
-  width: 100%; /* not content wrapper branch */
+  width: 100%;
+  /* not content wrapper branch */
 }
+
 header h2 {
-  width: 100% /* not content wrapper branch */
+  width: 100%
+    /* not content wrapper branch */
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -274,21 +335,25 @@ header h2 {
 #work {
   width: 100%;
 }
+
 #work h3 {
   width: 100%;
 }
+
 .work-content-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 .portfolio-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
 .home-portfolio-piece {
   width: 100%;
   display: flex;
@@ -297,26 +362,32 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+
 .home-portfolio-piece figure {
   width: 100%
-}  
+}
+
 .project-link {
   background-color: var(--accent);
   padding: 1rem 4rem;
   border-radius: 30px;
 }
+
 .skills-text p {
   background-color: var(--light-primary);
   padding: 5px 0;
   margin: 15px 0;
-} 
+}
+
 /* Skills */
 .tool-wrapper {
   display: flex;
-/*  justify-content: center; */ /* instead of center perhaps space between? */
+  /*  justify-content: center; */
+  /* instead of center perhaps space between? */
   justify-content: space-between;
   flex-flow: row wrap;
 }
+
 .tool {
   width: 45%
 }
@@ -326,11 +397,15 @@ header h2 {
   width: 100%;
   background-color: var(--dark-primary);
 }
+
 #profile-image {
   width: 90%;
-  border: 12px solid white; 
+  border: 12px solid white;
 }
-#about h3, #about h4, #about p {
+
+#about h3,
+#about h4,
+#about p {
   color: var(--light-text);
 }
 
@@ -341,32 +416,41 @@ footer .contact-wrapper {
   justify-content: center;
   align-items: flex-start;
 }
+
 footer .contact-info {
   width: 60%;
 }
-footer h4 { /* what here works? */
+
+footer h4 {
+  /* what here works? */
   width: 100%;
 }
+
 footer .follow-section {
   display: flex;
-  flex-flow: row wrap; 
-  justify-content: center; 
-/*  width: 100%; */ /****************/
+  flex-flow: row wrap;
+  justify-content: center;
+  /*  width: 100%; */
+  /****************/
 }
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
 }
+
 footer ul {
   width: 100%;
 }
+
 footer .social-icons li {
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
+
 footer .social-icons li i {
   font-size: 1.875rem;
   color: var(--dark-text);
@@ -462,297 +546,375 @@ footer .social-icons li i {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media only screen and (min-width:768px) {
-    /*Tablet styles here*/
-  
-    /* General styles */
-    /*.content-wrapper, */.work-content-wrapper, .about-content-wrapper { /* rethink */
-      max-width: 640px;
-    } 
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
 
-    /* font styles */
-    h1 {
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
-    h3 {
-      font-size: 2rem;
-    }
-    h4 {
-      font-size: 1.25rem;
-    }
-    h5 {
-    /*  font-size: 1.875rem; */ /* matches the design docs but it's too big on tablet unless the width between letters is reduced */
+  /* General styles */
+  /*.content-wrapper, */
+  .work-content-wrapper,
+  .about-content-wrapper {
+    /* rethink */
+    max-width: 640px;
+  }
+
+  /* font styles */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
     font-size: 1.5rem;
-    }
+  }
 
-    /* element margins */
-    /* the list element have 20px of bottom margin already */
-    header {
-      padding-top: 60px;
-      padding-bottom: 80px;
-    }
-    nav {
-      margin: 0 0 80px 0;
-    }
-    #work, footer {
-      margin: 120px 0;
-    }
-    #about {
-      padding: 120px 0;
-    }
-    footer {
-      margin-bottom: 80px;
-    }
-    h2 {
-      margin-top: 80px;
-    }
-    .portfolio-header {
-      margin: 0 0 60px 0;
-    }
-    h4 {
-      margin: 0 0 40px 0;
-    }
-    .project-description {
-      margin: 0 0 30px 0;
-    }
-    .project-link {
-      margin: 40px 0 60px 0;
-    }
-    .skills-header {
-      margin: 20px 0 40px 0;
-    }
-    figure {
-      margin: 20px 0;
-    }
-    .language-wrapper {
-      margin: 40px 0;
-    }
-    .about-info h3 {
-      margin: 80px 0;
-    }
-    .about-info h4 {
-      margin: 0 0 60px 0;
-    }
-    .about-text {
-      margin: 0 0 30px 0;
-    }
-    .contact-info {
-      margin: 80px 0;
-    }
-    .contact-title {
-      margin: 0 0 30px 0;
-    }
+  h3 {
+    font-size: 2rem;
+  }
 
-    /* header */
-    header .content-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-    }
-    header nav {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      text-transform: uppercase;
-    }
-    header nav ul {
-      display: flex;
-      justify-content: space-between;
-      width: 80%;
-    }
-    .home-title {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-    }
-    .home-title h2 {
-      max-width: 80%;
-    }
+  h4 {
+    font-size: 1.25rem;
+  }
 
-    /* portfolio */
-    .portfolio-wrapper {
-      justify-content: space-around;
-    }
-    .home-portfolio-piece {
-      width: 45%;
-      align-items: center;
-    }
-    .project-description {
-      width: 90%;
-    }
+  h5 {
+    /*  font-size: 1.875rem; */
+    /* matches the design docs but it's too big on tablet unless the width between letters is reduced */
+    font-size: 1.5rem;
+  }
 
-    /* skills */
-    .skills-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-    }
-    .language-wrapper, .tool-wrapper {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      flex-flow: row wrap;
-      text-transform: uppercase;     
-    }
-    .tool {
-      width: auto;
-    }
-    .skills-text p {
-      background-color: var(--light-primary);
-      padding: 5px 30px;
-      margin: 0;
-    } 
-    /* about */    
-    .about-content-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-    } 
-    #about figure {
-      width: 60%;
-    } 
-    .about-info h4 {
-      text-align: left;
-    }
-    
-    /* Footer */
-    .contact-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-    footer .contact-info {
+  /* element margins */
+  /* the list element have 20px of bottom margin already */
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  nav {
+    margin: 0 0 80px 0;
+  }
+
+  #work,
+  footer {
+    margin: 120px 0;
+  }
+
+  #about {
+    padding: 120px 0;
+  }
+
+  footer {
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    margin-top: 80px;
+  }
+
+  .portfolio-header {
+    margin: 0 0 60px 0;
+  }
+
+  h4 {
+    margin: 0 0 40px 0;
+  }
+
+  .project-description {
+    margin: 0 0 30px 0;
+  }
+
+  .project-link {
+    margin: 40px 0 60px 0;
+  }
+
+  .skills-header {
+    margin: 20px 0 40px 0;
+  }
+
+  figure {
+    margin: 20px 0;
+  }
+
+  .language-wrapper {
+    margin: 40px 0;
+  }
+
+  .about-info h3 {
+    margin: 80px 0;
+  }
+
+  .about-info h4 {
+    margin: 0 0 60px 0;
+  }
+
+  .about-text {
+    margin: 0 0 30px 0;
+  }
+
+  .contact-info {
+    margin: 80px 0;
+  }
+
+  .contact-title {
+    margin: 0 0 30px 0;
+  }
+
+  /* header */
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .home-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .home-title h2 {
+    max-width: 80%;
+  }
+
+  /* portfolio */
+  .portfolio-wrapper {
+    justify-content: space-around;
+  }
+
+  .home-portfolio-piece {
+    width: 45%;
+    align-items: center;
+  }
+
+  .project-description {
+    width: 90%;
+  }
+
+  /* skills */
+  .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .language-wrapper,
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+
+  .tool {
+    width: auto;
+  }
+
+  .skills-text p {
+    background-color: var(--light-primary);
+    padding: 5px 30px;
+    margin: 0;
+  }
+
+  /* about */
+  .about-content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  #about figure {
+    width: 60%;
+  }
+
+  .about-info h4 {
+    text-align: left;
+  }
+
+  /* Footer */
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contact-info {
     width: 33%;
-    }  
-    footer ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row; 
-      width: 100%;
-    }  
-    footer .social-icons {
-      width: 12.5em;
-      justify-content: space-between;
-    }    
-    footer .social-icons li i {
-      font-size: 2rem;
-    }
-    footer .copyright {
-      width: 100%;
-    }  
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .social-icons li i {
+    font-size: 2rem;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
 }
 
 
 @media only screen and (min-width:1200px) {
+
   /*Desktop styles here*/
-  /*.content-wrapper,*/ .work-content-wrapper, .about-content-wrapper { /* rethink */
-    max-width: 1450px; 
-  } 
+  /*.content-wrapper,*/
+  .work-content-wrapper,
+  .about-content-wrapper {
+    /* rethink */
+    max-width: 1450px;
+  }
 
   /* font styles */
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2rem;
   }
+
   h3 {
     font-size: 2.5rem;
   }
+
   h4 {
     font-size: 1.25rem;
   }
+
   h5 {
     font-size: 1.5rem;
   }
+
   .about-info h3 {
     font-size: 4rem;
     text-align: left;
   }
+
   .about-info h4 {
     font-size: 2rem;
   }
-  .project-link, .skills-text p {
+
+  .project-link,
+  .skills-text p {
     font-size: 1.375rem;
   }
 
   /* element margins */
-    /* the list element have 20px of bottom margin already */
-    header {
-      padding-top: 80px;
-      padding-bottom: 140px;
-    }
-    nav {
-      margin-bottom: 80px;
-    }
-    #work { /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
-      margin-top: 140px;
-      margin-bottom: 140px;
-    }
-    #about {
-      padding-top: 140px;
-      padding-bottom: 160px;
-    }
-    footer {
-      margin: 160px 0 140px 0;
-    }
-    h2 {
-      margin: 40px 0 0 0;
-    }
-    .portfolio-header {
-      margin: 0 0 80px 0;
-    }
-    h4 {
-      margin: 20px 0 40px 0; 
-    }
-    .project-description {
-      margin: 0 0 30px 0;
-    }
-    .project-link {
-      margin: 40px 0 120px 0;
-    }
-    .skills-header {
-      margin: 40px 0 40px 0;
-    }
-    figure {
-      margin: 0;
-    } 
-    .language-wrapper {
-      margin: 40px 0;
-    }
-    .about-info h3 {
-      margin: 0;
-    } 
-    .about-info h4 {
-      margin: 40px 0;
-    }
-    .about-text {
-      margin: 0 0 30px 0;
-    }
-    .contact-info {
-      margin: 80px 0 40px 0;
-    }
-    .contact-title {
-      margin: 0 0 30px 0;
-    }
+  /* the list element have 20px of bottom margin already */
+  header {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+
+  nav {
+    margin-bottom: 80px;
+  }
+
+  #work {
+    /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+
+  #about {
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+
+  footer {
+    margin: 160px 0 140px 0;
+  }
+
+  h2 {
+    margin: 40px 0 0 0;
+  }
+
+  .portfolio-header {
+    margin: 0 0 80px 0;
+  }
+
+  h4 {
+    margin: 20px 0 40px 0;
+  }
+
+  .project-description {
+    margin: 0 0 30px 0;
+  }
+
+  .project-link {
+    margin: 40px 0 120px 0;
+  }
+
+  .skills-header {
+    margin: 40px 0 40px 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .language-wrapper {
+    margin: 40px 0;
+  }
+
+  .about-info h3 {
+    margin: 0;
+  }
+
+  .about-info h4 {
+    margin: 40px 0;
+  }
+
+  .about-text {
+    margin: 0 0 30px 0;
+  }
+
+  .contact-info {
+    margin: 80px 0 40px 0;
+  }
+
+  .contact-title {
+    margin: 0 0 30px 0;
+  }
 
   /* header */
   header .content-wrapper {
     justify-content: flex-end;
   }
+
   header nav {
     justify-content: flex-end;
     width: 45%;
   }
+
   .home-title {
     max-width: 95%;
   }
+
   .home-title h2 {
     max-width: 70%;
   }
+
   /* portfolio */
   .home-portfolio-piece {
     width: 30%;
@@ -767,22 +929,23 @@ footer .social-icons li i {
   #about figure {
     width: 35%;
     margin-top: 0;
-  } 
+  }
 
   .about-info {
     width: 58%;
   }
-  
+
   /* contact */
   footer .content-wrapper {
     max-width: 70%;
   }
+
   footer .social-icons {
     width: 12.5em;
     justify-content: space-between;
   }
-  
-  
+
+
 }
 
 
@@ -793,9 +956,9 @@ footer .social-icons li i {
 
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -806,6 +969,7 @@ footer .social-icons li i {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -822,11 +986,11 @@ footer .social-icons li i {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -873,4 +1037,3 @@ footer .social-icons li i {
     page-break-after: avoid;
   }
 }
-
