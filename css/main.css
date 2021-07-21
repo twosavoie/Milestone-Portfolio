@@ -117,7 +117,7 @@ ol {
   margin: 0;
   padding: 0; 
 }
-a {
+a { /* might need to be more specific */
   color: var(--light-text);
   text-decoration: none;
 }
@@ -333,8 +333,6 @@ footer ul {
   width: 100%;
 }
 footer .social-icons li {
-  background-color: var(--accent);  
-  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
@@ -342,7 +340,7 @@ footer .social-icons li {
   align-items: center; 
 }
 footer .social-icons li i {
-  font-size: 1.3125em;
+  font-size: 2rem;
   color: var(--dark-text);
 }
 
@@ -641,15 +639,15 @@ footer .social-icons li i {
       margin: 80px 0;
     }
     header {
-      margin-bottom: 140px;
+      padding-bottom: 140px;
     }
     #work { /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
       margin-top: 140px;
       margin-bottom: 140px;
     }
     #about {
-      margin-top: 140px;
-      margin-bottom: 160px;
+      padding-top: 140px;
+      padding-bottom: 160px;
     }
     footer {
       margin: 160px 0 140px 0;
