@@ -324,12 +324,10 @@ header nav ul li {
 
 header h1 {
   width: 100%;
-  /* not content wrapper branch */
 }
 
 header h2 {
   width: 100%
-    /* not content wrapper branch */
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -425,7 +423,6 @@ footer .contact-info {
 }
 
 footer h4 {
-  /* what here works? */
   width: 100%;
 }
 
@@ -834,7 +831,6 @@ footer .social-icons li i {
   }
 
   #work {
-    /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
     margin-top: 140px;
     margin-bottom: 140px;
   }
