@@ -90,19 +90,22 @@ textarea {
 /* font family: Lexend Tera - headings, Lekton - paragraphs */
 
 /* perhaps instead of light and dark, choose primary/secondary... so when a change is made, it's made her and carries through below */
+/* also map to contrasting color - dark background/light text... */
 :root {
+  /**** implement change variable names from light/dark to primary, secondary, accent ... */
   /* var(-- ); */
   /* moody cheery natural */
   --light-text: #f5e6eb; /* moody */
-  /* #fce77d /* cheery */ /* #ffe8d6 /* natural */
-  --dark-text: #192a51;
-  /* #262d53 #4a4f3e */
-  --accent: #b17fc4;
-  /* 3e7516c #8cd2b4 */
-  --dark-primary: #192a51;
-  /* #262d53 #4a4f3e */
-  --light-primary: #f5e6eb;
-  /* #fce77d #ffe8d6 */
+  /* #fce77d /* cheery */    /* #ffe8d6 /* natural */
+  --dark-text: #192a51; /* moody */
+  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
+  --accent: #b17fc4; /* moody */
+  /* 3e7516c /* cheery */ /* #8cd2b4/* natural  */
+  --default-background: white; /* background behind portfolio section and footer */ /***** implement */
+  --dark-primary: #192a51; /* moody */
+  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
+  --light-primary: #f5e6eb; /* moody */
+  /* #fce77d /* cheery */    /* #ffe8d6 /* natural/* natural  */
   --hero: url("../img/");
   /* don't forget to change the Google Font links in the head */
   --p-font: 'Lekton', sans-serif;
