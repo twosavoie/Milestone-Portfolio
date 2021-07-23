@@ -92,22 +92,22 @@ textarea {
 
 /* perhaps instead of light and dark, choose primary/secondary... so when a change is made, it's made her and carries through below */
 /* also map to contrasting color - dark background/light text... */
+/* moody scheme: /* #f5e6eb; /* moody */ /* #192a51; /* moody */ /* #b17fc4; /* moody */
+/* cheery scheme: /* #fce77d /* cheery */ /* #262d53 /* cheery */ /* 3e7516c /* cheery */
+/* natural scheme: /* #ffe8d6 /* natural */ /* #4a4f3e/* natural  */ /* #8cd2b4/* natural  */
 :root {
   /**** implement change variable names from light/dark to primary, secondary, accent ... */
   /* var(-- ); */
-  /* moody cheery natural */
-  --light-text: #f5e6eb; /* moody */
-  /* #fce77d /* cheery */    /* #ffe8d6 /* natural */
-  --dark-text: #192a51; /* moody */
-  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
-  --accent: #b17fc4; /* moody */
-  /* 3e7516c /* cheery */ /* #8cd2b4/* natural  */
+  /* moody scheme */
+  --light-text: #f5e6eb; 
+  --dark-text: #192a51; 
+  --accent: #b17fc4; 
   --default-background: white; /* background behind portfolio section and footer */ /***** implement */
-  --dark-primary: #192a51; /* moody */
-  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
-  --light-primary: #f5e6eb; /* moody */
-  /* #fce77d /* cheery */    /* #ffe8d6 /* natural/* natural  */
+  --dark-primary: #192a51; 
+  --light-primary: #f5e6eb; 
+
   --hero: url("../img/");
+  
   /* don't forget to change the Google Font links in the head */
   --p-font: 'Lekton', sans-serif;
   /* Nunito Sans */
