@@ -263,7 +263,8 @@ nav {
 /*#work */
 .portfolio {
   /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-  margin: 80px 0;
+/*  margin: 80px 0; */
+  padding: 80px 0;
 }
 
 #about {
@@ -272,8 +273,10 @@ nav {
 }
 
 footer {
-  margin-top: 80px;
-  margin-bottom: 60px;
+/*  margin-top: 80px;
+  margin-bottom: 60px; */
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 h2 {
@@ -290,6 +293,9 @@ h4 {
 
 .project-link {
   margin: 40px 0;
+}
+#skills {
+  padding-top: 20px;
 }
 
 figure,
@@ -613,7 +619,8 @@ footer .social-icons li i {
   .portfolio,
   footer {
     /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-    margin: 120px 0;
+  /*  margin: 120px 0; */
+    padding: 120px 0;
   }
 
   #about {
@@ -621,7 +628,8 @@ footer .social-icons li i {
   }
 
   footer {
-    margin-bottom: 80px;
+  /*  margin-bottom: 80px; */
+    padding-bottom: 80px;
   }
 
   h2 {
@@ -643,8 +651,9 @@ footer .social-icons li i {
   .project-link {
     margin: 40px 0 60px 0;
   }
-  #skills {
-    margin-top: 20px;
+  #skills { /* also in mobile style - if I keep, then delete */
+  /*  margin-top: 20px; */
+    padding-top: 20px;
   }
   .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
     /*margin: 20px 0 40px 0; */
@@ -867,8 +876,10 @@ footer .social-icons li i {
   /*#work */
   .portfolio {
     /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-    margin-top: 140px;
-    margin-bottom: 140px;
+  /*  margin-top: 140px;
+    margin-bottom: 140px; */
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
 
   #about {
@@ -877,7 +888,8 @@ footer .social-icons li i {
   }
 
   footer {
-    margin: 160px 0 140px 0;
+  /*  margin: 160px 0 140px 0; */
+    padding: 160px 0 140px 0;
   }
 
   h2 {
@@ -900,7 +912,8 @@ footer .social-icons li i {
     margin: 40px 0 120px 0;
   }
   #skills { /* implement? change the margin to padding so that a background color could be easily added? This is a job for a new branch - not this one */
-    margin-top: 40px;
+  /*  margin-top: 40px; */
+    padding-top: 40px;
   }
   .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
   /*  margin: 40px 0 40px 0; */
