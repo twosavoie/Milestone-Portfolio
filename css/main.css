@@ -102,7 +102,7 @@ textarea {
   --light-text: #f5e6eb; 
   --dark-text: #192a51; 
   --accent: #b17fc4; 
-  --default-background: white; /* background behind portfolio section and footer */ /***** implement */
+  --default-background: white; 
   --dark-primary: #192a51; 
   --light-primary: #f5e6eb; 
 
@@ -124,6 +124,7 @@ body {
   font-size: 1em;
   font-family: var(--p-font);
   color: var(--dark-text);
+  background-color: var(--default-background); /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
 
 ul,
@@ -259,7 +260,9 @@ nav {
   margin-bottom: 60px;
 }
 
-#work {
+/*#work */
+.portfolio {
+  /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
   margin: 80px 0;
 }
 
@@ -339,20 +342,20 @@ header h2 {
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Portfolio */
-#work {
+#work, #skills {
   width: 100%;
 }
 
-#work h3 {
+#work h3 { /* need? */
   width: 100%;
 }
 
-.work-content-wrapper {
+/*.work-content-wrapper { don't think I need
   width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
+} */
 
 .portfolio-wrapper {
   display: flex;
@@ -362,7 +365,7 @@ header h2 {
 }
 
 .home-portfolio-piece {
-  width: 100%;
+  width: 100%; /* need ? */
   display: flex;
   justify-content: center;
   /*flex-flow: row wrap; */
@@ -389,6 +392,11 @@ header h2 {
 }
 
 /* Skills */
+/* if switching to a background color for the section instead. Also change the bottom margin for .portfolio and the top margin for the skills header */
+/*#skills {
+  background-color: var(--light-primary);
+  padding-bottom: 120px;
+} */
 .tool-wrapper {
   display: flex;
   /*  justify-content: center; */
@@ -559,9 +567,10 @@ footer .social-icons li i {
   /*Tablet styles here*/
 
   /* General styles */
-  /*.content-wrapper, */
+  .content-wrapper/*
   .work-content-wrapper,
-  .about-content-wrapper {
+  .skills-content-wrapper, 
+  .about-content-wrapper */ {
     /* rethink */
     max-width: 640px;
   }
@@ -600,8 +609,10 @@ footer .social-icons li i {
     margin: 0 0 80px 0;
   }
 
-  #work,
+  /*#work */
+  .portfolio,
   footer {
+    /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
     margin: 120px 0;
   }
 
@@ -632,9 +643,12 @@ footer .social-icons li i {
   .project-link {
     margin: 40px 0 60px 0;
   }
-
-  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? */
-    margin: 20px 0 40px 0;
+  #skills {
+    margin-top: 20px;
+  }
+  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
+    /*margin: 20px 0 40px 0; */
+    margin-bottom: 40px;
   }
 
   figure {
@@ -794,9 +808,10 @@ footer .social-icons li i {
 @media only screen and (min-width:1200px) {
 
   /*Desktop styles here*/
-  /*.content-wrapper,*/
+  .content-wrapper/*,
   .work-content-wrapper,
-  .about-content-wrapper {
+  .skills-content-wrapper, 
+  .about-content-wrapper */ {
     /* rethink */
     max-width: 1450px;
   }
@@ -849,8 +864,9 @@ footer .social-icons li i {
     margin-bottom: 80px;
   }
 
-  #work {
-    /* need to fix spacing between work and about on all screens - some of this may be taken care of with padding  */
+  /*#work */
+  .portfolio {
+    /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
     margin-top: 140px;
     margin-bottom: 140px;
   }
@@ -883,9 +899,12 @@ footer .social-icons li i {
   .project-link {
     margin: 40px 0 120px 0;
   }
-
-  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? */
-    margin: 40px 0 40px 0;
+  #skills { /* implement? change the margin to padding so that a background color could be easily added? This is a job for a new branch - not this one */
+    margin-top: 40px;
+  }
+  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
+  /*  margin: 40px 0 40px 0; */
+    margin-bottom: 40px;
   }
 
   figure {
