@@ -87,27 +87,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* color scheme: #f5e6eb (text) #b17fc4 (accent)  #192a51 (main background) */
-/* font family: Lexend Tera - headings, Lekton - paragraphs */
+/* font family moody: Lexend Tera - headings, Lekton - paragraphs */
 /**** implement natural version for Nichole *****/
 
-/* perhaps instead of light and dark, choose primary/secondary... so when a change is made, it's made her and carries through below */
-/* also map to contrasting color - dark background/light text... */
-/* moody scheme: /* #f5e6eb; /* moody */ /* #192a51; /* moody */ /* #b17fc4; /* moody */
-/* cheery scheme: /* #fce77d /* cheery */ /* #262d53 /* cheery */ /* 3e7516c /* cheery */
-/* natural scheme: /* #ffe8d6 /* natural */ /* #4a4f3e/* natural  */ /* #8cd2b4/* natural  */
+/* moody scheme: /* #f5e6eb; /* moody */
+/* #192a51; /* moody */
+/* #b17fc4; /* moody */
+/* cheery scheme: /* #fce77d /* cheery */
+/* #262d53 /* cheery */
+/* 3e7516c /* cheery */
+/* natural scheme: /* #ffe8d6 /* natural */
+/* #4a4f3e/* natural  */
+/* #8cd2b4/* natural  */
 :root {
-  /**** implement change variable names from light/dark to primary, secondary, accent ... */
   /* var(-- ); */
   /* moody scheme */
-  --light-text: #f5e6eb; 
-  --dark-text: #192a51; 
-  --accent: #b17fc4; 
-  --default-background: white; 
-  --dark-primary: #192a51; 
-  --light-primary: #f5e6eb; 
+  --light-text: #f5e6eb;
+  --dark-text: #192a51;
+  --accent: #b17fc4;
+  --default-background: white;
+  --dark-primary: #192a51;
+  --light-primary: #f5e6eb;
 
   --hero: url("../img/");
-  
+
   /* don't forget to change the Google Font links in the head */
   --p-font: 'Lekton', sans-serif;
   /* Nunito Sans */
@@ -124,16 +127,8 @@ body {
   font-size: 1em;
   font-family: var(--p-font);
   color: var(--dark-text);
-  background-color: var(--default-background); /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
-}
-#work {
-  background-color: red;
-}
-#skills {
-  background-color: blue;
-}
-footer {
-  background-color: orange;
+  background-color: var(--default-background);
+  /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
 
 ul,
@@ -179,9 +174,8 @@ h5 {
 }
 
 .project-link,
-/*.skills-text p */
-.language-wrapper p, 
-.tool-wrapper p{
+.language-wrapper p,
+.tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: bold;
@@ -226,7 +220,7 @@ address {
 /* Structural Styles */
 header,
 #work,
-#skills, 
+#skills,
 #about,
 footer {
   display: flex;
@@ -236,7 +230,6 @@ footer {
 }
 
 .content-wrapper {
-  /* do I need a main-content-wrapper too */
   width: 85%;
 }
 
@@ -244,7 +237,7 @@ footer {
   text-align: left;
 }
 
-/* set the margins for each section - these are only a suggestion :) */
+/* set the margins & paddings for each section - these are only a suggestion :) */
 /* setting all margins to zero removes all browser added default margins */
 h1,
 h2,
@@ -259,7 +252,7 @@ p {
   margin: 0;
 }
 
-/* then can set the margin for any element */
+/* then can set the margin & paddings for any element */
 header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -269,15 +262,10 @@ nav {
   margin-bottom: 60px;
 }
 
-/*#work */
-/*.portfolio {
-  /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-/*  margin: 80px 0; */
-/*  padding: 80px 0;
-} */
 #work {
   padding-top: 80px;
 }
+
 #skills {
   padding-bottom: 80px;
 }
@@ -288,8 +276,6 @@ nav {
 }
 
 footer {
-/*  margin-top: 80px;
-  margin-bottom: 60px; */
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -309,6 +295,7 @@ h4 {
 .project-link {
   margin: 40px 0;
 }
+
 #skills {
   padding-top: 20px;
 }
@@ -338,7 +325,8 @@ figure,
 
 header {
   background-color: var(--dark-primary);
-  /*  height: 800px;
+  /*  if adding a hero image
+  height: 800px;
   background: var(--hero); 
   background-size: cover;
   background-position: center; */
@@ -352,31 +340,24 @@ header nav ul li {
 
 header h1 {
   width: 100%;
-  /* not content wrapper branch */
 }
 
 header h2 {
   width: 100%
-    /* not content wrapper branch */
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Portfolio */
-#work, #skills {
+#work,
+#skills {
   width: 100%;
 }
 
-#work h3 { /* need? */
+#work h3 {
+  /* need? */
   width: 100%;
 }
-
-/*.work-content-wrapper { don't think I need
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-} */
 
 .portfolio-wrapper {
   display: flex;
@@ -386,10 +367,9 @@ header h2 {
 }
 
 .home-portfolio-piece {
-  width: 100%; /* need ? */
+  width: 100%;
   display: flex;
   justify-content: center;
-  /*flex-flow: row wrap; */
   flex-direction: column;
   align-items: center;
 }
@@ -405,23 +385,16 @@ header h2 {
 }
 
 /*.skills-text p */
-.language-wrapper p, 
-.tool-wrapper p{
+.language-wrapper p,
+.tool-wrapper p {
   background-color: var(--light-primary);
   padding: 5px 0;
   margin: 15px 0;
 }
 
 /* Skills */
-/* if switching to a background color for the section instead. Also change the bottom margin for .portfolio and the top margin for the skills header */
-/*#skills {
-  background-color: var(--light-primary);
-  padding-bottom: 120px;
-} */
 .tool-wrapper {
   display: flex;
-  /*  justify-content: center; */
-  /* instead of center perhaps space between? */
   justify-content: space-between;
   flex-flow: row wrap;
 }
@@ -460,7 +433,6 @@ footer .contact-info {
 }
 
 footer h4 {
-  /* what here works? */
   width: 100%;
 }
 
@@ -468,8 +440,6 @@ footer .follow-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /*  width: 100%; */
-  /****************/
 }
 
 footer .social-icons {
@@ -588,11 +558,7 @@ footer .social-icons li i {
   /*Tablet styles here*/
 
   /* General styles */
-  .content-wrapper/*
-  .work-content-wrapper,
-  .skills-content-wrapper, 
-  .about-content-wrapper */ {
-    /* rethink */
+  .content-wrapper {
     max-width: 640px;
   }
 
@@ -634,13 +600,13 @@ footer .social-icons li i {
   #work {
     padding-top: 120px;
   }
+
   #skills {
     padding-bottom: 120px;
   }
-/*  .portfolio, */
+
+  /*  .portfolio, */
   footer {
-    /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-  /*  margin: 120px 0; */
     padding: 120px 0;
   }
 
@@ -649,7 +615,6 @@ footer .social-icons li i {
   }
 
   footer {
-  /*  margin-bottom: 80px; */
     padding-bottom: 80px;
   }
 
@@ -672,12 +637,12 @@ footer .social-icons li i {
   .project-link {
     margin: 40px 0 60px 0;
   }
-  #skills { /* also in mobile style - if I keep, then delete */
-  /*  margin-top: 20px; */
+
+  #skills {
     padding-top: 20px;
   }
-  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
-    /*margin: 20px 0 40px 0; */
+
+  .skills-header {
     margin-bottom: 40px;
   }
 
@@ -753,14 +718,6 @@ footer .social-icons li i {
     width: 90%;
   }
 
-  /* skills */
-  /* changed to #skills
-  .skills-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  } */
-
   .language-wrapper,
   .tool-wrapper {
     display: flex;
@@ -774,14 +731,15 @@ footer .social-icons li i {
     width: auto;
   }
 
-/*  .skills-text p */
-  .language-wrapper p, 
-  .tool-wrapper p {  
+  .language-wrapper p,
+  .tool-wrapper p {
     background-color: var(--light-primary);
     padding: 5px 30px;
     margin: 0;
-  } 
-  .language-wrapper p, .tool-wrapper p {
+  }
+
+  .language-wrapper p,
+  .tool-wrapper p {
     background-color: var(--light-primary);
     padding: 5px 30px;
     margin: 0;
@@ -838,11 +796,7 @@ footer .social-icons li i {
 @media only screen and (min-width:1200px) {
 
   /*Desktop styles here*/
-  .content-wrapper/*,
-  .work-content-wrapper,
-  .skills-content-wrapper, 
-  .about-content-wrapper */ {
-    /* rethink */
+  .content-wrapper {
     max-width: 1450px;
   }
 
@@ -877,8 +831,7 @@ footer .social-icons li i {
   }
 
   .project-link,
-/*  .skills-text p */
-  .language-wrapper p, 
+  .language-wrapper p,
   .tool-wrapper p {
     font-size: 1.375rem;
   }
@@ -894,17 +847,10 @@ footer .social-icons li i {
     margin-bottom: 80px;
   }
 
-  /*#work */
-/*  .portfolio {
-    /* if background color in work and/or skills, margins would become padding for #work and/or #skills. */
-  /*  margin-top: 140px;
-    margin-bottom: 140px; */
-/*    padding-top: 140px;
-    padding-bottom: 140px;
-  } */
   #work {
     padding-top: 140px;
   }
+
   #skills {
     padding-bottom: 140px;
   }
@@ -915,7 +861,6 @@ footer .social-icons li i {
   }
 
   footer {
-  /*  margin: 160px 0 140px 0; */
     padding: 160px 0 140px 0;
   }
 
@@ -938,12 +883,12 @@ footer .social-icons li i {
   .project-link {
     margin: 40px 0 120px 0;
   }
-  #skills { /* implement? change the margin to padding so that a background color could be easily added? This is a job for a new branch - not this one */
-  /*  margin-top: 40px; */
+
+  #skills {
     padding-top: 40px;
   }
-  .skills-header { /* is this the best place for this - where is it for work? should I be adjusting farther up first? If decide to do a background color - change to padding or move to #skills */
-  /*  margin: 40px 0 40px 0; */
+
+  .skills-header {
     margin-bottom: 40px;
   }
 
