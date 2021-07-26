@@ -362,7 +362,7 @@ header h2 {
 .portfolio-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
