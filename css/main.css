@@ -556,9 +556,9 @@ footer .social-icons li i {
    ========================================================================== */
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
-
+  /* maybe create a 1024 media query */
   /* General styles */
-  .content-wrapper {
+  .content-wrapper { /* maybe increase width */
     max-width: 640px;
   }
 
@@ -727,22 +727,24 @@ footer .social-icons li i {
     text-transform: uppercase;
   }
 
-  .tool {
-    width: auto;
+  .skill, .tool {
+  /*  width: auto; */
+    width: 45%; 
   }
 
-  .language-wrapper p,
+/*  .language-wrapper p,
   .tool-wrapper p {
     background-color: var(--light-primary);
     padding: 5px 30px;
     margin: 0;
-  }
+  } */
 
   .language-wrapper p,
   .tool-wrapper p {
     background-color: var(--light-primary);
-    padding: 5px 30px;
-    margin: 0;
+    padding: 5px 0;
+  /*  padding: 5px 30px; */
+  /*  margin: 0; looks terrible */
   }
 
   /* about */
@@ -828,6 +830,9 @@ footer .social-icons li i {
 
   .about-info h4 {
     font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
   }
 
   .project-link,
@@ -930,11 +935,11 @@ footer .social-icons li i {
     width: 45%;
   }
 
-  .home-title {
+  .home-title { /* maybe remove */
     max-width: 95%;
   }
 
-  .home-title h2 {
+  .home-title h2 { /* maybe remove */
     max-width: 70%;
   }
 
@@ -942,6 +947,28 @@ footer .social-icons li i {
   .home-portfolio-piece {
     width: 30%;
   }
+  
+  /* skills */
+  .skill, .tool {
+    /*  width: auto; */
+      width: 30%; 
+    }
+  
+  /*  .language-wrapper p,
+    .tool-wrapper p {
+      background-color: var(--light-primary);
+      padding: 5px 30px;
+      margin: 0;
+    } */
+  
+    .language-wrapper p,
+    .tool-wrapper p {
+      background-color: var(--light-primary);
+      padding: 5px 0;
+    /*  padding: 5px 30px; */
+    /*  margin: 0; looks terrible */
+    }
+  
 
   /* about */
   .about-content-wrapper {
