@@ -87,26 +87,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* color scheme: #f5e6eb (text) #b17fc4 (accent)  #192a51 (main background) */
-/* font family: Lexend Tera - headings, Lekton - paragraphs */
+/* font family moody: Lexend Tera - headings, Lekton - paragraphs */
+/**** implement natural version for Nichole *****/
 
-/* perhaps instead of light and dark, choose primary/secondary... so when a change is made, it's made her and carries through below */
-/* also map to contrasting color - dark background/light text... */
+/* moody scheme: /* #f5e6eb; /* moody */
+/* #192a51; /* moody */
+/* #b17fc4; /* moody */
+/* cheery scheme: /* #fce77d /* cheery */
+/* #262d53 /* cheery */
+/* 3e7516c /* cheery */
+/* natural scheme: /* #ffe8d6 /* natural */
+/* #4a4f3e/* natural  */
+/* #8cd2b4/* natural  */
 :root {
-  /**** implement change variable names from light/dark to primary, secondary, accent ... */
   /* var(-- ); */
-  /* moody cheery natural */
-  --light-text: #f5e6eb; /* moody */
-  /* #fce77d /* cheery */    /* #ffe8d6 /* natural */
-  --dark-text: #192a51; /* moody */
-  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
-  --accent: #b17fc4; /* moody */
-  /* 3e7516c /* cheery */ /* #8cd2b4/* natural  */
-  --default-background: white; /* background behind portfolio section and footer */ /***** implement */
-  --dark-primary: #192a51; /* moody */
-  /* #262d53 /* cheery */ /* #4a4f3e/* natural  */
-  --light-primary: #f5e6eb; /* moody */
-  /* #fce77d /* cheery */    /* #ffe8d6 /* natural/* natural  */
+  /* moody scheme */
+  --light-text: #f5e6eb;
+  --dark-text: #192a51;
+  --accent: #b17fc4;
+  --default-background: white;
+  --dark-primary: #192a51;
+  --light-primary: #f5e6eb;
+
   --hero: url("../img/");
+
   /* don't forget to change the Google Font links in the head */
   --p-font: 'Lekton', sans-serif;
   /* Nunito Sans */
@@ -123,6 +127,8 @@ body {
   font-size: 1em;
   font-family: var(--p-font);
   color: var(--dark-text);
+  background-color: var(--default-background);
+  /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
 
 ul,
@@ -168,7 +174,8 @@ h5 {
 }
 
 .project-link,
-.skills-text p {
+.language-wrapper p,
+.tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: bold;
@@ -213,6 +220,7 @@ address {
 /* Structural Styles */
 header,
 #work,
+#skills,
 #about,
 footer {
   display: flex;
@@ -222,7 +230,6 @@ footer {
 }
 
 .content-wrapper {
-  /* do I need a main-content-wrapper too */
   width: 85%;
 }
 
@@ -230,7 +237,7 @@ footer {
   text-align: left;
 }
 
-/* set the margins for each section - these are only a suggestion :) */
+/* set the margins & paddings for each section - these are only a suggestion :) */
 /* setting all margins to zero removes all browser added default margins */
 h1,
 h2,
@@ -245,7 +252,7 @@ p {
   margin: 0;
 }
 
-/* then can set the margin for any element */
+/* then can set the margin & paddings for any element */
 header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -256,7 +263,11 @@ nav {
 }
 
 #work {
-  margin: 80px 0;
+  padding-top: 80px;
+}
+
+#skills {
+  padding-bottom: 80px;
 }
 
 #about {
@@ -265,8 +276,8 @@ nav {
 }
 
 footer {
-  margin-top: 80px;
-  margin-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 h2 {
@@ -283,6 +294,10 @@ h4 {
 
 .project-link {
   margin: 40px 0;
+}
+
+#skills {
+  padding-top: 20px;
 }
 
 figure,
@@ -310,7 +325,8 @@ figure,
 
 header {
   background-color: var(--dark-primary);
-  /*  height: 800px;
+  /*  if adding a hero image
+  height: 800px;
   background: var(--hero); 
   background-size: cover;
   background-position: center; */
@@ -333,19 +349,14 @@ header h2 {
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Portfolio */
-#work {
+#work,
+#skills {
   width: 100%;
 }
 
 #work h3 {
+  /* need? */
   width: 100%;
-}
-
-.work-content-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
 }
 
 .portfolio-wrapper {
@@ -359,7 +370,6 @@ header h2 {
   width: 100%;
   display: flex;
   justify-content: center;
-  /*flex-flow: row wrap; */
   flex-direction: column;
   align-items: center;
 }
@@ -374,7 +384,9 @@ header h2 {
   border-radius: 30px;
 }
 
-.skills-text p {
+/*.skills-text p */
+.language-wrapper p,
+.tool-wrapper p {
   background-color: var(--light-primary);
   padding: 5px 0;
   margin: 15px 0;
@@ -383,8 +395,6 @@ header h2 {
 /* Skills */
 .tool-wrapper {
   display: flex;
-  /*  justify-content: center; */
-  /* instead of center perhaps space between? */
   justify-content: space-between;
   flex-flow: row wrap;
 }
@@ -430,8 +440,6 @@ footer .follow-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /*  width: 100%; */
-  /****************/
 }
 
 footer .social-icons {
@@ -548,12 +556,9 @@ footer .social-icons li i {
    ========================================================================== */
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
-
+  /* maybe create a 1024 media query */
   /* General styles */
-  /*.content-wrapper, */
-  .work-content-wrapper,
-  .about-content-wrapper {
-    /* rethink */
+  .content-wrapper { /* maybe increase width */
     max-width: 640px;
   }
 
@@ -591,9 +596,18 @@ footer .social-icons li i {
     margin: 0 0 80px 0;
   }
 
-  #work,
+  /*#work */
+  #work {
+    padding-top: 120px;
+  }
+
+  #skills {
+    padding-bottom: 120px;
+  }
+
+  /*  .portfolio, */
   footer {
-    margin: 120px 0;
+    padding: 120px 0;
   }
 
   #about {
@@ -601,7 +615,7 @@ footer .social-icons li i {
   }
 
   footer {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   h2 {
@@ -624,8 +638,12 @@ footer .social-icons li i {
     margin: 40px 0 60px 0;
   }
 
+  #skills {
+    padding-top: 20px;
+  }
+
   .skills-header {
-    margin: 20px 0 40px 0;
+    margin-bottom: 40px;
   }
 
   figure {
@@ -700,13 +718,6 @@ footer .social-icons li i {
     width: 90%;
   }
 
-  /* skills */
-  .skills-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-
   .language-wrapper,
   .tool-wrapper {
     display: flex;
@@ -716,14 +727,24 @@ footer .social-icons li i {
     text-transform: uppercase;
   }
 
-  .tool {
-    width: auto;
+  .skill, .tool {
+  /*  width: auto; */
+    width: 45%; 
   }
 
-  .skills-text p {
+/*  .language-wrapper p,
+  .tool-wrapper p {
     background-color: var(--light-primary);
     padding: 5px 30px;
     margin: 0;
+  } */
+
+  .language-wrapper p,
+  .tool-wrapper p {
+    background-color: var(--light-primary);
+    padding: 5px 0;
+  /*  padding: 5px 30px; */
+  /*  margin: 0; looks terrible */
   }
 
   /* about */
@@ -777,10 +798,7 @@ footer .social-icons li i {
 @media only screen and (min-width:1200px) {
 
   /*Desktop styles here*/
-  /*.content-wrapper,*/
-  .work-content-wrapper,
-  .about-content-wrapper {
-    /* rethink */
+  .content-wrapper {
     max-width: 1450px;
   }
 
@@ -813,9 +831,13 @@ footer .social-icons li i {
   .about-info h4 {
     font-size: 2rem;
   }
+  p {
+    font-size: 1.25rem;
+  }
 
   .project-link,
-  .skills-text p {
+  .language-wrapper p,
+  .tool-wrapper p {
     font-size: 1.375rem;
   }
 
@@ -831,8 +853,11 @@ footer .social-icons li i {
   }
 
   #work {
-    margin-top: 140px;
-    margin-bottom: 140px;
+    padding-top: 140px;
+  }
+
+  #skills {
+    padding-bottom: 140px;
   }
 
   #about {
@@ -841,7 +866,7 @@ footer .social-icons li i {
   }
 
   footer {
-    margin: 160px 0 140px 0;
+    padding: 160px 0 140px 0;
   }
 
   h2 {
@@ -864,8 +889,12 @@ footer .social-icons li i {
     margin: 40px 0 120px 0;
   }
 
+  #skills {
+    padding-top: 40px;
+  }
+
   .skills-header {
-    margin: 40px 0 40px 0;
+    margin-bottom: 40px;
   }
 
   figure {
@@ -906,11 +935,11 @@ footer .social-icons li i {
     width: 45%;
   }
 
-  .home-title {
+  .home-title { /* maybe remove */
     max-width: 95%;
   }
 
-  .home-title h2 {
+  .home-title h2 { /* maybe remove */
     max-width: 70%;
   }
 
@@ -918,6 +947,28 @@ footer .social-icons li i {
   .home-portfolio-piece {
     width: 30%;
   }
+  
+  /* skills */
+  .skill, .tool {
+    /*  width: auto; */
+      width: 30%; 
+    }
+  
+  /*  .language-wrapper p,
+    .tool-wrapper p {
+      background-color: var(--light-primary);
+      padding: 5px 30px;
+      margin: 0;
+    } */
+  
+    .language-wrapper p,
+    .tool-wrapper p {
+      background-color: var(--light-primary);
+      padding: 5px 0;
+    /*  padding: 5px 30px; */
+    /*  margin: 0; looks terrible */
+    }
+  
 
   /* about */
   .about-content-wrapper {
