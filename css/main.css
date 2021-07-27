@@ -338,6 +338,10 @@ header nav ul li {
   font-weight: bold;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 header h1 {
   width: 100%;
 }
