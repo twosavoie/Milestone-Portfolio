@@ -794,6 +794,12 @@ footer .social-icons li i {
   }
 }
 
+@media only screen and (min-width:1024px) {
+  /* added for landscape tablets and iPad Pro */
+  .content-wrapper {
+    max-width: 900px;
+  }
+}
 
 @media only screen and (min-width:1200px) {
 
