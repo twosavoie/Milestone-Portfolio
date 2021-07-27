@@ -338,6 +338,10 @@ header nav ul li {
   font-weight: bold;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 header h1 {
   width: 100%;
 }
@@ -794,6 +798,12 @@ footer .social-icons li i {
   }
 }
 
+@media only screen and (min-width:1024px) {
+  /* added for landscape tablets and iPad Pro */
+  .content-wrapper {
+    max-width: 900px;
+  }
+}
 
 @media only screen and (min-width:1200px) {
 
@@ -934,6 +944,21 @@ footer .social-icons li i {
     justify-content: flex-end;
     width: 45%;
   }
+
+  /* These two code blocks allow a hover background-color to show in the nav on desktop */
+  nav ul li a {
+    border: 1px solid transparent; 
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+  
+  nav ul li a:hover { 
+    background-color: var(--accent);
+    border: 1px solid var(--accent); 
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+  /* End these two code blocks allow a hover background-color to show in the nav on desktop */
 
   .home-title { /* maybe remove */
     max-width: 95%;
