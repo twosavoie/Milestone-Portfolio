@@ -93,21 +93,21 @@ textarea {
 /**** implement natural version for Nichole *****/
 
 /* moody scheme: 
-/* #f5e6eb; /* moody */
-/* #192a51; /* moody */
-/* #b17fc4; /* moody */
+/* #f5e6eb; /* moody light */
+/* #192a51; /* moody dark */
+/* #b17fc4; /* moody accent */
 /* font-family: 'Lekton', sans-serif;
 /* font-family: 'Lexend Tera', sans-serif;
 /* cheery scheme: 
-/* #fce77d /* cheery */
-/* #262d53 /* cheery */
-/* 3e7516c /* cheery */
+/* #fce77d /* cheery light */
+/* #262d53 /* cheery dark */
+/* 3e7516c /* cheery accent */
 /* font-family: 'Alata', sans-serif; */
 /* font-family: 'Nunito Sans', sans-serif; */
 /* natural scheme: 
-/* #ffe8d6 /* natural */
-/* #4a4f3e/* natural  */
-/* #8cd2b4/* natural  */
+/* #ffe8d6 /* natural light */
+/* #4a4f3e/* natural  dark */
+/* #8cd2b4/* natural  accent */
 /* font-family: 'Alike', serif; */
 /* font-family: 'Open Sans', sans-serif; */
 :root {
