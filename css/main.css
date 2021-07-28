@@ -300,9 +300,14 @@ h4 {
   padding-top: 20px;
 }
 
-figure,
-.language-wrapper {
+figure {
   margin: 20px 0;
+}
+/*.language-wrapper { If keeping sub titles remove this and keep below. Also tablet & desktop - line 919
+  margin: 20px 0;
+} */
+.skills-header {
+  margin-bottom: 20px;
 }
 
 .about-info h3 {
@@ -336,12 +341,14 @@ header nav ul li {
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav ul {
+nav ul { /* if keeping - remove from tablet media queries */
   display: flex;
   justify-content: space-between;
 }
+
 header h1 {
   width: 100%;
 }
@@ -388,7 +395,9 @@ header h2 {
   border-radius: 30px;
 }
 
-/*.skills-text p */
+#skills h4 {
+  margin: 20px 0;
+} 
 .language-wrapper p,
 .tool-wrapper p {
   background-color: var(--light-primary);
@@ -397,15 +406,16 @@ header h2 {
 }
 
 /* Skills */
-.tool-wrapper {
+/*.tool-wrapper { not needed if using full width tools in mobile version 
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-}
+} */
 
-.tool {
-  width: 45%
-}
+.tool { 
+/*  width: 45% don't like the two column layout - check with designer */
+  width: 100%;
+} 
 
 /* About */
 #about {
@@ -654,9 +664,9 @@ footer .social-icons li i {
     margin: 20px 0;
   }
 
-  .language-wrapper {
+/*  .language-wrapper { If keeping sub titles remove this and keep below. Also desktop - line 919
     margin: 40px 0;
-  }
+  } */
 
   .about-info h3 {
     margin: 80px 0;
@@ -685,14 +695,14 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
-  header nav {
+  header nav { /* may be replaced by mobile version */
     display: flex;
     justify-content: center;
     width: 100%;
     text-transform: uppercase;
   }
 
-  header nav ul {
+  header nav ul { /* may be replaced by mobile version */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -911,9 +921,11 @@ footer .social-icons li i {
     margin: 0;
   }
 
-  .language-wrapper {
+/*  .language-wrapper { If keeping sub titles remove this and keep below. It's a repeat of tablet anyway - line 662
     margin: 40px 0;
-  }
+  } */
+
+  
 
   .about-info h3 {
     margin: 0;
