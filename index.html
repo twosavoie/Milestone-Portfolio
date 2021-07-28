@@ -28,6 +28,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Lexend+Tera&display=swap"
     rel="stylesheet">
   <!-- end moody scheme font-family -->
+  <!-- cheery scheme font family: Alata - headings, Nunito Sans - paragraphs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- end cheery scheme -->
+  <!-- natural scheme font family: Alike - headings, Open Sans - paragraphs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- end natural scheme -->
 </head>
 
 <body>
@@ -35,7 +47,7 @@
     <div class="content-wrapper">
       <nav>
         <ul>
-          <li><a href="#work">projects</a></li> 
+          <li><a href="#work">projects</a></li>
           <li><a href="#skills">skills</a></li>
           <li><a href="#about">about</a></li>
           <li><a href="#contact">contact me</a></li>
@@ -50,7 +62,6 @@
 
   <main>
     <article class="portfolio">
-      <!-- article instead? -->
       <section id="work">
         <div class="content-wrapper">
           <h3 class="portfolio-header">Projects</h3> <!-- implement change to Projects -->
@@ -61,7 +72,8 @@
                     alt="Sticky Note Project"></a>
               </figure>
               <h4>Super Sticky Notes</h4>
-              <p class="project-description">Greenfield project creating a Sticky Notes web app. Uses mulitple
+              <p class="project-description left-align-text">Greenfield project creating a Sticky Notes web app. Uses
+                mulitple
                 components to build the classic sticky note UI with the ability to add, edit, delete and search
                 for notes.</p>
               <p><span>Skills: </span>React, JSX, Components</p>
@@ -74,7 +86,8 @@
                     src="img/github-repo-gallery.png" alt="GitHub Repo Gallery"></a>
               </figure>
               <h4>GitHub Repo Gallery</h4>
-              <p class="project-description">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery
+              <p class="project-description left-align-text">Uses GitHub's API to pull data from my GitHub portfolio to
+                create a gallery
                 of repos. Visitors to the site can click on the repos to see more details and a link to the repo.</p>
               <p><span>Skills: </span>JavaScript</p>
               <p><span>Tools: </span>Web API, GitHub Pages</p>
@@ -87,10 +100,11 @@
                     src="img/guess-the-word-game.png" alt="Guess the Word Game"></a>
               </figure>
               <h4>Guess the Word Game</h4>
-              <p class="project-description">Players guess the word by entering one letter at a time. If the player
+              <p class="project-description left-align-text">Players guess the word by entering one letter at a time. If
+                the player
                 guesses all the letters correctly before they use up their allotted guesses, they win!</p>
               <p><span>Skills: </span>JavaScript</p>
-              <p><span>Tools: </span>GitHub Pages</p>
+              <p><span>Tools: </span>GitHub Pages, JSON</p>
               <a class="project-link" href="https://skillcrush.github.io/guess-the-word/" target="_blank">live page</a>
             </div>
             <div class="home-portfolio-piece">
@@ -100,7 +114,9 @@
                     alt="Unplugged Site"></a>
               </figure>
               <h4>Unplugged</h4>
-              <p class="project-description">A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.</p>
+              <p class="project-description left-align-text">A multi-page responsive website coded with Flexbox. This
+                versatile design has several sections, including a Cards design pattern, that can be repurposed for
+                different sites.</p>
               <p><span>Skills: </span>HTML, CSS, Flexbox</p>
               <p><span>Tools: </span>Photoshop, Chrome Dev Tools, GitHub pages</p>
               <a class="project-link" href="https://twosavoie.github.io/unplugged-retreat/" target="_blank">live
@@ -109,13 +125,16 @@
             <div class="home-portfolio-piece">
               <!-- This is from my repo. I couldn't find a working Skillcrush gh-pages of Unplugged. -->
               <figure>
-                <a href="https://twosavoie.github.io/206-rogue_pickings/" target="_blank"><img src="img/rogue-pickings.png" alt="Rogue Pickings site"></a>
+                <a href="https://twosavoie.github.io/206-rogue_pickings/" target="_blank"><img
+                    src="img/rogue-pickings.png" alt="Rogue Pickings site"></a>
               </figure>
               <h4>Rogue Pickings</h4>
-              <p class="project-description">A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.</p>
+              <p class="project-description left-align-text">A simple home page perfect for a pop-up restaurant or food
+                truck. Originally a static website, I converted it into a responsive design using Flexbox.</p>
               <p><span>Skills: </span>HTML, CSS, Flexbox</p>
               <p><span>Tools: </span>Photoshop, Chrome Dev Tools, GitHub pages</p>
-              <a class="project-link" href="https://twosavoie.github.io/206-rogue_pickings/" target="_blank">live page</a>
+              <a class="project-link" href="https://twosavoie.github.io/206-rogue_pickings/" target="_blank">live
+                page</a>
             </div>
           </div>
         </div>
@@ -154,6 +173,8 @@
         <div class="about-content-wrapper">
           <figure>
             <img src="img/pexels-monstera-6186147.jpg" alt="" id="profile-image">
+            <!--           <img src="img/pexels-cedric-fauntleroy-8154426.jpg" alt="" id="profile-image"> -->
+            <!--            <img src="img/pexels-cedric-fauntleroy-8154426.jpg" alt="" id="profile-image"> -->
           </figure>
           <div class="about-info">
             <h3>Hi there, I’m Hana Badin!</h3>
@@ -163,6 +184,7 @@
               When I’m not coding or taking care of my 2-year-old son, I’m busy baking the world’s best sourdough bread
               and daydreaming about my next travel adventure.
             </p>
+            <!--           <p>Hi, I’m Alex Carleson, a Front End Developer based in St. Louis. After starting my career in nursing, I discovered my true passion - creating responsive websites that deliver what the user needs. I’ve even created a few sites for healthcare websites - talk about bridging two career interests! In my spare time, I like to help others learn to code and hang out with my Pomeranian, Kevin. </p> -->
             <p class="left-align-text"><span>Can't wait to work with you!</span></p>
           </div>
         </div>
@@ -184,7 +206,8 @@
           <h5 class="contact-title">Follow me</h5>
           <ul class="social-icons">
             <!-- maybe not a list -->
-            <li><a href="https://www.linkedin.com/school/skillcrush/mycompany/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <li><a href="https://www.linkedin.com/school/skillcrush/mycompany/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
             </li>
             <li><a href="https://github.com/skillcrush" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://twitter.com/Skillcrush" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -196,8 +219,10 @@
           <p>Let's go to meetups together!</p>
         </div>
       </div>
-    <!--  <p>Copyright 202x | name</p> -->
-      <p>Copyright <script>document.write(new Date().getFullYear())</script> | Hana Badin</p>
+      <!--  <p>Copyright 202x | name</p> -->
+      <p>Copyright
+        <script>document.write(new Date().getFullYear())</script> | Hana Badin
+      </p>
     </div>
   </footer>
 
