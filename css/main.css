@@ -116,6 +116,7 @@ textarea {
   --light-text: #f5e6eb;
   --dark-text: #192a51;
   --accent: #b17fc4;
+  --accent-hover: #986da9;
   --default-background: white;
   --dark-primary: #192a51;
   --light-primary: #f5e6eb;
@@ -191,6 +192,8 @@ h5 {
   font-size: 1.125rem;
   font-weight: bold;
 }
+
+
 
 .about-info h4,
 .contact-title {
@@ -405,6 +408,10 @@ header h2 {
   background-color: var(--accent);
   padding: 1rem 4rem;
   border-radius: 30px;
+}
+
+.project-link:hover {
+  background-color: var(--accent-hover);
 }
 
 #skills h4 {
@@ -741,7 +748,7 @@ footer .social-icons li i {
   }
 
   .project-description {
-    width: 90%;
+    width: 95%;
   }
 
   .language-wrapper,
@@ -978,6 +985,7 @@ footer .social-icons li i {
   
   nav ul li a:hover { 
     background-color: var(--accent);
+    color: var(--dark-text);
     border: 1px solid var(--accent); 
     padding: 10px 10px;
     border-radius: 30px;
