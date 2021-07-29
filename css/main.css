@@ -116,6 +116,7 @@ textarea {
   --light-text: #fce77d;
   --dark-text: #262d53;
   --accent: #e7516c;
+  --accent-hover: #c7455c;
   --default-background: white;
   --dark-primary: #262d53;
   --light-primary: #fce77d;
@@ -191,6 +192,10 @@ h5 {
   font-size: 1.125rem;
   font-weight: bold;
   color: var(--light-text);
+}
+
+.project-link:hover {
+  background-color: var(--accent-hover);
 }
 
 .about-info h4,
@@ -982,6 +987,7 @@ footer .social-icons li i {
     border: 1px solid var(--accent); 
     padding: 10px 10px;
     border-radius: 30px;
+    color: var(--light-text);
   }
   /* End these two code blocks allow a hover background-color to show in the nav on desktop */
 
