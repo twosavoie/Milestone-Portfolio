@@ -106,26 +106,27 @@ textarea {
 /* font-family: 'Nunito Sans', sans-serif; */
 /* natural scheme: 
 /* #ffe8d6 /* natural light */
-/* #4a4f3e/* natural  dark */
-/* #8cd2b4/* natural  accent */
+/* #4a4f3e /* natural  dark */
+/* #8cd2b4 /* natural  accent */
 /* font-family: 'Alike', serif; */
 /* font-family: 'Open Sans', sans-serif; */
 :root {
   /* var(-- ); */
   /* moody scheme */
-  --light-text: #fce77d;
-  --dark-text: #262d53;
-  --accent: #e7516c;
+  --light-text: #ffe8d6;
+  --dark-text: #4a4f3e;
+  --accent: #8cd2b4;
+  --accent-hover: #7ab59c;
   --default-background: white;
-  --dark-primary: #262d53;
-  --light-primary: #fce77d;
+  --dark-primary: #4a4f3e;
+  --light-primary: #ffe8d6;
 
   --hero: url("../img/");
 
   /* don't forget to change the Google Font links in the head */
-  --p-font: 'Nunito Sans', sans-serif;
+  --p-font: 'Open Sans', sans-serif;
   /* Nunito Sans */
-  --header-font: 'Alata', sans-serif;
+  --header-font: 'Alike', serif;
   /* Alata */
 }
 
@@ -406,6 +407,9 @@ header h2 {
   background-color: var(--accent);
   padding: 1rem 4rem;
   border-radius: 30px;
+}
+.project-link:hover {
+  background-color: var(--accent-hover);
 }
 
 #skills h4 {
@@ -742,7 +746,7 @@ footer .social-icons li i {
   }
 
   .project-description {
-    width: 90%;
+    width: 95%;
   }
 
   .language-wrapper,
@@ -979,6 +983,7 @@ footer .social-icons li i {
   
   nav ul li a:hover { 
     background-color: var(--accent);
+    color: var(--light-primary);
     border: 1px solid var(--accent); 
     padding: 10px 10px;
     border-radius: 30px;
