@@ -113,20 +113,20 @@ textarea {
 :root {
   /* var(-- ); */
   /* moody scheme */
-  --light-text: #fce77d;
-  --dark-text: #262d53;
-  --accent: #e7516c;
-  --accent-hover: #c7455c;
+  --light-text: #f5e6eb;
+  --dark-text: #192a51;
+  --accent: #b17fc4;
+  --accent-hover: #986da9;
   --default-background: white;
-  --dark-primary: #262d53;
-  --light-primary: #fce77d;
+  --dark-primary: #192a51;
+  --light-primary: #f5e6eb;
 
   --hero: url("../img/");
 
   /* don't forget to change the Google Font links in the head */
-  --p-font: 'Nunito Sans', sans-serif;
+  --p-font: 'Lekton', sans-serif;
   /* Nunito Sans */
-  --header-font: 'Alata', sans-serif;
+  --header-font: 'Lexend Tera', sans-serif;
   /* Alata */
 }
 
