@@ -115,7 +115,7 @@ a {
 h1 {
   color: #4a4f3e;
   font-family: 'Alike', serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
 }
@@ -763,6 +763,10 @@ footer .social-icons li i {
   .content-wrapper {
     max-width: 900px;
   }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -794,7 +798,7 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     text-align: left;
   }
 
