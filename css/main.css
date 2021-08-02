@@ -86,49 +86,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* color scheme: #f5e6eb (text) #b17fc4 (accent)  #192a51 (main background) */
-/* moody scheme font family: Lexend Tera - headings, Lekton - paragraphs */
-/* cheery scheme font family: Alata - headings, Nunito Sans - paragraphs */
-/* natural scheme font family: Alike - headings, Open Sans - paragraphs */
-/**** implement natural version for Nichole *****/
-
-/* moody scheme: 
-/* #f5e6eb; /* moody light */
-/* #192a51; /* moody dark */
-/* #b17fc4; /* moody accent */
-/* font-family: 'Lekton', sans-serif;
-/* font-family: 'Lexend Tera', sans-serif;
-/* cheery scheme: 
-/* #fce77d /* cheery light */
-/* #262d53 /* cheery dark */
-/* #e7516c /* cheery accent */
-/* font-family: 'Alata', sans-serif; */
-/* font-family: 'Nunito Sans', sans-serif; */
-/* natural scheme: 
-/* #ffe8d6 /* natural light */
-/* #4a4f3e /* natural  dark */
-/* #8cd2b4 /* natural  accent */
-/* font-family: 'Alike', serif; */
-/* font-family: 'Open Sans', sans-serif; */
-:root {
-  /* var(-- ); */
-  /* moody scheme */
-  --light-text: #ffe8d6;
-  --dark-text: #4a4f3e;
-  --accent: #8cd2b4;
-  --accent-hover: #7ab59c;
-  --default-background: white;
-  --dark-primary: #4a4f3e;
-  --light-primary: #ffe8d6;
-
-  --hero: url("../img/");
-
-  /* don't forget to change the Google Font links in the head */
-  --p-font: 'Open Sans', sans-serif;
-  /* Nunito Sans */
-  --header-font: 'Alike', serif;
-  /* Alata */
-}
 
 /* General Styles */
 html {
@@ -137,9 +94,9 @@ html {
 
 body {
   font-size: 1em;
-  font-family: var(--p-font);
-  color: var(--dark-text);
-  background-color: var(--default-background);
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4f3e;
+  background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
 
@@ -151,22 +108,21 @@ ol {
 }
 
 a {
-  /* might need to be more specific */
-  color: var(--dark-text);
+  color: #4a4f3e;
   text-decoration: none;
 }
 
 h1 {
-  color: var(--dark-text);
-  font-family: var(--header-font);
+  color: #4a4f3e;
+  font-family: 'Alike', serif;
   font-size: 2rem;
   line-height: 1.5;
   width: 100%
 }
 
 h2 {
-  color: var(--dark-text);
-  font-family: var(--header-font);
+  color: #4a4f3e;
+  font-family: 'Alike', serif;
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -191,7 +147,7 @@ h5 {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: bold;
-  color: var(--light-text);
+  color: #ffe8d6;
 }
 
 .about-info h4,
@@ -203,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--header-font);
+  font-family: 'Alike', serif;
   line-height: 1.5;
   width: 100%
 }
@@ -316,9 +272,7 @@ h4 {
 figure {
   margin: 20px 0;
 }
-/*.language-wrapper { If keeping sub titles remove this and keep below. Also tablet & desktop - line 919
-  margin: 20px 0;
-} */
+
 .skills-header {
   margin-bottom: 20px;
 }
@@ -342,12 +296,7 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: var(--light-primary);
-  /*  if adding a hero image
-  height: 800px;
-  background: var(--hero); 
-  background-size: cover;
-  background-position: center; */
+  background-color: #ffe8d6;
 }
 
 header nav ul li {
@@ -357,7 +306,7 @@ header nav ul li {
   text-transform: uppercase;
 }
 
-nav ul { /* if keeping - remove from tablet media queries */
+nav ul {
   display: flex;
   justify-content: space-between;
 }
@@ -379,7 +328,6 @@ header h2 {
 }
 
 #work h3 {
-  /* need? */
   width: 100%;
 }
 
@@ -404,40 +352,34 @@ header h2 {
 }
 
 .project-link {
-  background-color: var(--accent);
+  background-color: #8cd2b4;
   padding: 1rem 4rem;
   border-radius: 30px;
 }
+
 .project-link:hover {
-  background-color: var(--accent-hover);
+  background-color: #7ab59c;
 }
 
 #skills h4 {
   margin: 20px 0;
-} 
+}
+
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: var(--light-primary);
+  background-color: #4a4f3e;
   padding: 5px 0;
   margin: 15px 0;
 }
 
-/* Skills */
-/*.tool-wrapper { not needed if using full width tools in mobile version 
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-} */
-
-.tool { 
-/*  width: 45% don't like the two column layout - check with designer */
+.tool {
   width: 100%;
-} 
+}
 
 /* About */
 #about {
   width: 100%;
-  background-color: var(--light-primary);
+  background-color: #ffe8d6;
 }
 
 #profile-image {
@@ -448,7 +390,7 @@ header h2 {
 #about h3,
 #about h4,
 #about p {
-  color: var(--dark-text);
+  color: #4a4f3e;
 }
 
 /* -------------------- Base Header Styles -------------------- */
@@ -492,7 +434,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: var(--dark-text);
+  color: #4a4f3e;
 }
 
 
@@ -587,9 +529,9 @@ footer .social-icons li i {
    ========================================================================== */
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
-  /* maybe create a 1024 media query */
+
   /* General styles */
-  .content-wrapper { /* maybe increase width */
+  .content-wrapper {
     max-width: 640px;
   }
 
@@ -611,8 +553,6 @@ footer .social-icons li i {
   }
 
   h5 {
-    /*  font-size: 1.875rem; */
-    /* matches the design docs but it's too big on tablet unless the width between letters is reduced */
     font-size: 1.5rem;
   }
 
@@ -681,10 +621,6 @@ footer .social-icons li i {
     margin: 20px 0;
   }
 
-/*  .language-wrapper { If keeping sub titles remove this and keep below. Also desktop - line 919
-    margin: 40px 0;
-  } */
-
   .about-info h3 {
     margin: 80px 0;
   }
@@ -712,14 +648,16 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
-  header nav { /* may be replaced by mobile version */
+  header nav {
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
     text-transform: uppercase;
   }
 
-  header nav ul { /* may be replaced by mobile version */
+  header nav ul {
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -758,24 +696,16 @@ footer .social-icons li i {
     text-transform: uppercase;
   }
 
-  .skill, .tool {
-  /*  width: auto; */
-    width: 45%; 
+  .skill,
+  .tool {
+    /*  width: auto; */
+    width: 45%;
   }
-
-/*  .language-wrapper p,
-  .tool-wrapper p {
-    background-color: var(--light-primary);
-    padding: 5px 30px;
-    margin: 0;
-  } */
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: var(--dark-primary);
+    background-color: #4a4f3e;
     padding: 5px 0;
-  /*  padding: 5px 30px; */
-  /*  margin: 0; looks terrible */
   }
 
   /* about */
@@ -826,6 +756,7 @@ footer .social-icons li i {
 }
 
 @media only screen and (min-width:1024px) {
+
   /* added for landscape tablets and iPad Pro */
   .content-wrapper {
     max-width: 900px;
@@ -868,6 +799,7 @@ footer .social-icons li i {
   .about-info h4 {
     font-size: 2rem;
   }
+
   p {
     font-size: 1.25rem;
   }
@@ -938,12 +870,6 @@ footer .social-icons li i {
     margin: 0;
   }
 
-/*  .language-wrapper { If keeping sub titles remove this and keep below. It's a repeat of tablet anyway - line 662
-    margin: 40px 0;
-  } */
-
-  
-
   .about-info h3 {
     margin: 0;
   }
@@ -976,25 +902,26 @@ footer .social-icons li i {
 
   /* These two code blocks allow a hover background-color to show in the nav on desktop */
   nav ul li a {
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     padding: 10px 10px;
     border-radius: 30px;
   }
-  
-  nav ul li a:hover { 
-    background-color: var(--accent);
-    color: var(--light-primary);
-    border: 1px solid var(--accent); 
+
+  nav ul li a:hover {
+    background-color: #8cd2b4;
+    color: #ffe8d6;
+    border: 1px solid #8cd2b4;
     padding: 10px 10px;
     border-radius: 30px;
   }
+
   /* End these two code blocks allow a hover background-color to show in the nav on desktop */
 
-  .home-title { /* maybe remove */
+  .home-title {
     max-width: 95%;
   }
 
-  .home-title h2 { /* maybe remove */
+  .home-title h2 {
     max-width: 70%;
   }
 
@@ -1002,28 +929,19 @@ footer .social-icons li i {
   .home-portfolio-piece {
     width: 30%;
   }
-  
+
   /* skills */
-  .skill, .tool {
-    /*  width: auto; */
-      width: 30%; 
-    }
-  
-  /*  .language-wrapper p,
-    .tool-wrapper p {
-      background-color: var(--light-primary);
-      padding: 5px 30px;
-      margin: 0;
-    } */
-  
-    .language-wrapper p,
-    .tool-wrapper p {
-      background-color: var(--dark-primary);
-      padding: 5px 0;
-    /*  padding: 5px 30px; */
-    /*  margin: 0; looks terrible */
-    }
-  
+  .skill,
+  .tool {
+    width: 30%;
+  }
+
+  .language-wrapper p,
+  .tool-wrapper p {
+    background-color: #4a4f3e;
+    padding: 5px 0;
+  }
+
 
   /* about */
   .about-content-wrapper {
@@ -1049,8 +967,6 @@ footer .social-icons li i {
     width: 12.5em;
     justify-content: space-between;
   }
-
-
 }
 
 
