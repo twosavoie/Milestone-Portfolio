@@ -307,7 +307,7 @@ header nav ul li {
   text-transform: uppercase;
 }
 
-nav ul { 
+nav ul {
   display: flex;
   justify-content: space-between;
 }
@@ -366,7 +366,8 @@ header h2 {
 
 #skills h4 {
   margin: 20px 0;
-} 
+}
+
 .language-wrapper p,
 .tool-wrapper p {
   background-color: #f5e6eb;
@@ -374,9 +375,9 @@ header h2 {
   margin: 15px 0;
 }
 
-.tool { 
+.tool {
   width: 100%;
-} 
+}
 
 /* About */
 #about {
@@ -533,7 +534,7 @@ footer .social-icons li i {
   /* Tablet styles here */
 
   /* General styles */
-  .content-wrapper { 
+  .content-wrapper {
     max-width: 640px;
   }
 
@@ -649,14 +650,16 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
-  header nav { /* needed if using hamburger menu */
+  header nav {
+    /* needed if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
     text-transform: uppercase;
   }
 
-  header nav ul { /* needed if using hamburger menu */
+  header nav ul {
+    /* needed if using hamburger menu */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -695,8 +698,9 @@ footer .social-icons li i {
     text-transform: uppercase;
   }
 
-  .skill, .tool {
-    width: 45%; 
+  .skill,
+  .tool {
+    width: 45%;
   }
 
   .language-wrapper p,
@@ -753,6 +757,7 @@ footer .social-icons li i {
 }
 
 @media only screen and (min-width:1024px) {
+
   /* added for landscape tablets and iPad Pro */
   .content-wrapper {
     max-width: 900px;
@@ -795,6 +800,7 @@ footer .social-icons li i {
   .about-info h4 {
     font-size: 2rem;
   }
+
   p {
     font-size: 1.25rem;
   }
@@ -897,25 +903,23 @@ footer .social-icons li i {
 
   /* These two code blocks allow a hover background-color to show in the nav on desktop */
   nav ul li a {
-    border: 1px solid transparent; 
     padding: 10px 10px;
-    border-radius: 30px;
   }
-  
-  nav ul li a:hover { 
+
+  nav ul li a:hover {
     background-color: #b17fc4;
     color: #192a51;
-    border: 1px solid #b17fc4; 
     padding: 10px 10px;
     border-radius: 30px;
   }
+
   /* End these two code blocks allow a hover background-color to show in the nav on desktop */
 
-  .home-title { 
+  .home-title {
     max-width: 95%;
   }
 
-  .home-title h2 { 
+  .home-title h2 {
     max-width: 70%;
   }
 
@@ -923,18 +927,19 @@ footer .social-icons li i {
   .home-portfolio-piece {
     width: 30%;
   }
-  
+
   /* skills */
-  .skill, .tool {
-      width: 30%; 
-    }
-  
-    .language-wrapper p,
-    .tool-wrapper p {
-      background-color: #f5e6eb;
-      padding: 5px 0;
-    }
-  
+  .skill,
+  .tool {
+    width: 30%;
+  }
+
+  .language-wrapper p,
+  .tool-wrapper p {
+    background-color: #f5e6eb;
+    padding: 5px 0;
+  }
+
 
   /* about */
   .about-content-wrapper {
