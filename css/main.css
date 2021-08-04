@@ -903,14 +903,11 @@ footer .social-icons li i {
 
   /* These two code blocks allow a hover background-color to show in the nav on desktop */
   nav ul li a {
-    border: 1px solid transparent;
     padding: 10px 10px;
-    border-radius: 30px;
   }
 
   nav ul li a:hover {
     background-color: #e7516c;
-    border: 1px solid #e7516c;
     padding: 10px 10px;
     border-radius: 30px;
     color: #fce77d;
