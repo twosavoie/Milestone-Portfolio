@@ -146,7 +146,6 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  font-weight: bold;
   color: #ffe8d6;
 }
 
@@ -302,10 +301,20 @@ header {
 }
 
 header nav ul li {
-  font-size: 1rem;
+  font-size: .75rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav ul li a {
+  padding: 10px 10px;
+} 
+
+nav #contact-link {
+  background-color: #8CD2B4;
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 nav ul {
@@ -347,6 +356,9 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+.home-portfolio-piece h4 {
+  font-weight: bold;
+}
 
 .home-portfolio-piece figure {
   width: 100%;
@@ -354,25 +366,26 @@ header h2 {
 }
 
 .project-link {
-  background-color: #338464;
+  background-color: #4A4F3E;
   padding: 1rem 4rem;
   border-radius: 30px;
-  color: white;
+  color: #FFE8D6;
 }
 
 .project-link:hover {
-  background-color: #28694f;
+  background-color: #2B2E23;
 }
 
 #skills h4 {
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
+  font-weight: bold;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
   background-color: #4a4f3e;
   padding: 5px 0;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .tool {
@@ -559,6 +572,10 @@ footer .social-icons li i {
     font-size: 1.5rem;
   }
 
+  header nav ul li {
+    font-size: 1rem;
+  }
+
   /* element margins */
   /* the list element have 20px of bottom margin already */
   header {
@@ -617,6 +634,10 @@ footer .social-icons li i {
 
   .skills-header {
     margin-bottom: 40px;
+  }
+
+  #skills h4 {
+    margin: 40px 0 10px 0;
   }
 
   figure {
@@ -911,9 +932,9 @@ footer .social-icons li i {
     padding: 10px 10px;
   }
 
-  nav ul li a:hover {
-    background-color: #8cd2b4;
-    color: #ffe8d6;
+  nav ul li a:hover, nav #contact-link:hover {
+    background-color: #539F7E;
+    color: #FFE8D6;
     padding: 10px 10px;
     border-radius: 30px;
   }
