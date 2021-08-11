@@ -94,8 +94,8 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Lekton', sans-serif;
-  color: #192a51;
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4f3e;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
@@ -108,21 +108,21 @@ ol {
 }
 
 a {
-  color: #f5e6eb;
+  color: #4a4f3e;
   text-decoration: none;
 }
 
 h1 {
-  color: #f5e6eb;
-  font-family: 'Lexend Tera', sans-serif;
-  font-size: 2rem;
+  color: #4a4f3e;
+  font-family: 'Alike', serif;
+  font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
 }
 
 h2 {
-  color: #f5e6eb;
-  font-family: 'Lexend Tera', sans-serif;
+  color: #4a4f3e;
+  font-family: 'Alike', serif;
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -146,7 +146,7 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  font-weight: bold;
+  color: #ffe8d6;
 }
 
 
@@ -160,7 +160,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lexend Tera', sans-serif;
+  font-family: 'Alike', serif;
   line-height: 1.5;
   width: 100%
 }
@@ -297,14 +297,24 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: #192a51;
+  background-color: #ffe8d6;
 }
 
 header nav ul li {
-  font-size: 1rem;
+  font-size: .75rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav ul li a {
+  padding: 10px 10px;
+} 
+
+nav #contact-link {
+  background-color: #B17FC4; 
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 nav ul {
@@ -329,7 +339,6 @@ header h2 {
 }
 
 #work h3 {
-  /* need? */
   width: 100%;
 }
 
@@ -347,6 +356,9 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+.home-portfolio-piece h4 {
+  font-weight: bold;
+}
 
 .home-portfolio-piece figure {
   width: 100%;
@@ -354,25 +366,26 @@ header h2 {
 }
 
 .project-link {
-  background-color: #b17fc4;
+  background-color: #4A4F3E;
   padding: 1rem 4rem;
   border-radius: 30px;
-  color: white;
+  color: #FFE8D6;
 }
 
 .project-link:hover {
-  background-color: #9c6fad;
+  background-color: #0F1C39;
 }
 
 #skills h4 {
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
+  font-weight: bold;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #f5e6eb;
+  background-color: #F5E6E8;
   padding: 5px 0;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .tool {
@@ -382,7 +395,7 @@ header h2 {
 /* About */
 #about {
   width: 100%;
-  background-color: #192a51;
+  background-color: #ffe8d6;
 }
 
 #profile-image {
@@ -393,7 +406,7 @@ header h2 {
 #about h3,
 #about h4,
 #about p {
-  color: #f5e6eb;
+  color: #4a4f3e;
 }
 
 /* -------------------- Base Header Styles -------------------- */
@@ -437,7 +450,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: #192a51;
+  color: #4a4f3e;
 }
 
 
@@ -531,7 +544,7 @@ footer .social-icons li i {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width:768px) {
-  /* Tablet styles here */
+  /*Tablet styles here*/
 
   /* General styles */
   .content-wrapper {
@@ -557,6 +570,10 @@ footer .social-icons li i {
 
   h5 {
     font-size: 1.5rem;
+  }
+
+  header nav ul li {
+    font-size: 1rem;
   }
 
   /* element margins */
@@ -619,6 +636,10 @@ footer .social-icons li i {
     margin-bottom: 40px;
   }
 
+  #skills h4 {
+    margin: 40px 0 10px 0;
+  }
+
   figure {
     margin: 20px 0;
   }
@@ -651,7 +672,7 @@ footer .social-icons li i {
   }
 
   header nav {
-    /* needed if using hamburger menu */
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -659,7 +680,7 @@ footer .social-icons li i {
   }
 
   header nav ul {
-    /* needed if using hamburger menu */
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -705,7 +726,7 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #f5e6eb;
+    background-color: #4a4f3e;
     padding: 5px 0;
   }
 
@@ -762,6 +783,10 @@ footer .social-icons li i {
   .content-wrapper {
     max-width: 900px;
   }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -793,7 +818,7 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     text-align: left;
   }
 
@@ -906,9 +931,9 @@ footer .social-icons li i {
     padding: 10px 10px;
   }
 
-  nav ul li a:hover {
-    background-color: #b17fc4;
-    color: #192a51;
+  nav ul li a:hover, nav #contact-link:hover {
+    background-color: #9966AC;
+    color: #ffffff;
     padding: 10px 10px;
     border-radius: 30px;
   }
