@@ -94,7 +94,7 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lekton', sans-serif;
   color: #192A51;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
@@ -114,7 +114,7 @@ a {
 
 h1 {
   color: #F5E6E8;
-  font-family: 'Alike', serif;
+  font-family: 'Lexend Tera', sans-serif;
   font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
@@ -122,7 +122,7 @@ h1 {
 
 h2 {
   color: #F5E6E8;
-  font-family: 'Alike', serif;
+  font-family: 'Lexend Tera', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -160,7 +160,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alike', serif;
+  font-family: 'Lexend Tera', sans-serif;
   line-height: 1.5;
   width: 100%
 }
