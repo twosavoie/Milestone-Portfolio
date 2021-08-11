@@ -95,7 +95,7 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
-  color: #4a4f3e;
+  color: #192A51;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
@@ -108,12 +108,12 @@ ol {
 }
 
 a {
-  color: #4a4f3e;
+  color: #F5E6E8;
   text-decoration: none;
 }
 
 h1 {
-  color: #4a4f3e;
+  color: #F5E6E8;
   font-family: 'Alike', serif;
   font-size: 1.75rem;
   line-height: 1.5;
@@ -121,7 +121,7 @@ h1 {
 }
 
 h2 {
-  color: #4a4f3e;
+  color: #F5E6E8;
   font-family: 'Alike', serif;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -146,7 +146,7 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #ffe8d6;
+  color: #192A51;
 }
 
 
@@ -297,7 +297,7 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: #ffe8d6;
+  background-color: #192A51;
 }
 
 header nav ul li {
@@ -366,10 +366,10 @@ header h2 {
 }
 
 .project-link {
-  background-color: #4A4F3E;
+  background-color: #192A51;
   padding: 1rem 4rem;
   border-radius: 30px;
-  color: #FFE8D6;
+  color: #ffffff;
 }
 
 .project-link:hover {
@@ -395,7 +395,7 @@ header h2 {
 /* About */
 #about {
   width: 100%;
-  background-color: #ffe8d6;
+  background-color: #192A51;
 }
 
 #profile-image {
@@ -406,7 +406,7 @@ header h2 {
 #about h3,
 #about h4,
 #about p {
-  color: #4a4f3e;
+  color: #F5E6E8;
 }
 
 /* -------------------- Base Header Styles -------------------- */
@@ -450,7 +450,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: #4a4f3e;
+  color: #192A51;
 }
 
 
@@ -726,7 +726,7 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #4a4f3e;
+    background-color: #F5E6E8;
     padding: 5px 0;
   }
 
