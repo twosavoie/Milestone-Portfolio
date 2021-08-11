@@ -146,7 +146,7 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #ffe8d6;
+  color: #4A4F3E;
 }
 
 
@@ -395,7 +395,7 @@ header h2 {
 
 .language-wrapper p,
 .tool-wrapper p {
-  background-color: #4a4f3e;
+  background-color: #FFE8D6;
   padding: 5px 0;
   margin: 20px 0;
 }
@@ -739,7 +739,6 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #4a4f3e;
     padding: 5px 0;
   }
 
@@ -974,7 +973,6 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #4a4f3e;
     padding: 5px 0;
   }
 
