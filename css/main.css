@@ -145,7 +145,7 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #fce77d;
+  color: #262D53;
 }
 
 .project-link:hover {
@@ -316,6 +316,7 @@ nav ul li a {
 
 nav #contact-link {
   background-color: #E7516C;
+  color: #FFFFFF;
   padding: 10px 10px;
   border-radius: 30px;
 }
@@ -730,7 +731,6 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #262d53;
     padding: 5px 0;
   }
 
@@ -965,7 +965,6 @@ footer .social-icons li i {
 
   .language-wrapper p,
   .tool-wrapper p {
-    background-color: #262d53;
     padding: 5px 0;
   }
 
