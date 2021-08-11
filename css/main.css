@@ -369,24 +369,12 @@ header h2 {
   background-color: #4A4F3E;
   padding: 1rem 4rem;
   border-radius: 30px;
-  color: #FFE8D6;
+  color: #FFFFFF;
 }
 
 .project-link:hover {
   background-color: #2B2E23;
 }
-/* updated to pass wave - this is on gh-pages overwrites the two code blocks above */
-.project-link {
-  background-color: #338464;
-  padding: 1rem 4rem;
-  border-radius: 30px;
-  color: white;
-}
-
-.project-link:hover {
-  background-color: #28694f;
-}
-/* end updated to pass wave - this is on gh-pages */
 
 #skills h4 {
   margin: 40px 0 20px 0;
