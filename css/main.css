@@ -94,7 +94,7 @@ html {
 body {
   font-size: 1em;
   font-family: 'Lekton', sans-serif;
-  color: #192a51;
+  color: #192A51;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
 }
@@ -145,13 +145,10 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  font-weight: bold;
-  color: #f5e6eb;
+  color: #F5E6E8;
 }
 
-.project-link:hover {
-  background-color: #986da9;
-}
+
 
 .about-info h4,
 .contact-title {
@@ -303,10 +300,20 @@ header {
 }
 
 header nav ul li {
-  font-size: 1rem;
+  font-size: .75rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav ul li a {
+  padding: 10px 10px;
+} 
+
+nav #contact-link {
+  background-color: #B17FC4; 
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 nav ul {
@@ -348,6 +355,9 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+.home-portfolio-piece h4 {
+  font-weight: bold;
+}
 
 .home-portfolio-piece figure {
   width: 100%;
@@ -355,23 +365,28 @@ header h2 {
 }
 
 .project-link {
-  background-color: #b17fc4;
+  background-color: #192A51;
   padding: 1rem 4rem;
   border-radius: 30px;
+  color: #ffffff;
+}
+
+.project-link:hover {
+  background-color: #0F1C39;
 }
 
 #skills h4 {
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
+  font-weight: bold;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
   background-color: #f5e6eb;
   padding: 5px 0;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
-/* Skills */
 .tool {
   width: 100%;
 }
@@ -556,6 +571,10 @@ footer .social-icons li i {
     font-size: 1.5rem;
   }
 
+  header nav ul li {
+    font-size: 1rem;
+  }
+
   /* element margins */
   /* the list element have 20px of bottom margin already */
   header {
@@ -576,7 +595,6 @@ footer .social-icons li i {
     padding-bottom: 120px;
   }
 
-  /*  .portfolio, */
   footer {
     padding: 120px 0;
   }
@@ -617,6 +635,10 @@ footer .social-icons li i {
     margin-bottom: 40px;
   }
 
+  #skills h4 {
+    margin: 40px 0 10px 0;
+  }
+
   figure {
     margin: 20px 0;
   }
@@ -649,7 +671,7 @@ footer .social-icons li i {
   }
 
   header nav {
-    /* keep if using a hamburger menu */
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -657,7 +679,7 @@ footer .social-icons li i {
   }
 
   header nav ul {
-    /* keep if using a hamburger menu */
+    /* keep if using hamburger menu */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -760,6 +782,10 @@ footer .social-icons li i {
   .content-wrapper {
     max-width: 900px;
   }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -791,7 +817,7 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     text-align: left;
   }
 
@@ -905,10 +931,10 @@ footer .social-icons li i {
   }
 
   nav ul li a:hover {
-    background-color: #b17fc4;
+    background-color: #9966AC;
+    color: #ffffff;
     padding: 10px 10px;
     border-radius: 30px;
-    color: #f5e6eb;
   }
 
   /* End these two code blocks allow a hover background-color to show in the nav on desktop */
@@ -963,8 +989,6 @@ footer .social-icons li i {
     width: 12.5em;
     justify-content: space-between;
   }
-
-
 }
 
 
