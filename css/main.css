@@ -115,7 +115,7 @@ a {
 h1 {
   color: #4a4f3e;
   font-family: 'Alike', serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
 }
@@ -146,9 +146,10 @@ h5 {
 .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  font-weight: bold;
   color: #ffe8d6;
 }
+
+
 
 .about-info h4,
 .contact-title {
@@ -300,10 +301,20 @@ header {
 }
 
 header nav ul li {
-  font-size: 1rem;
+  font-size: .75rem;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav ul li a {
+  padding: 10px 10px;
+} 
+
+nav #contact-link {
+  background-color: #8CD2B4;
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 nav ul {
@@ -345,6 +356,9 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+.home-portfolio-piece h4 {
+  font-weight: bold;
+}
 
 .home-portfolio-piece figure {
   width: 100%;
@@ -352,13 +366,14 @@ header h2 {
 }
 
 .project-link {
-  background-color: #8cd2b4;
+  background-color: #4A4F3E;
   padding: 1rem 4rem;
   border-radius: 30px;
+  color: #FFE8D6;
 }
 
 .project-link:hover {
-  background-color: #7ab59c;
+  background-color: #2B2E23;
 }
 /* updated to pass wave - this is on gh-pages overwrites the two code blocks above */
 .project-link {
@@ -374,14 +389,15 @@ header h2 {
 /* end updated to pass wave - this is on gh-pages */
 
 #skills h4 {
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
+  font-weight: bold;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
   background-color: #4a4f3e;
   padding: 5px 0;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .tool {
@@ -568,6 +584,10 @@ footer .social-icons li i {
     font-size: 1.5rem;
   }
 
+  header nav ul li {
+    font-size: 1rem;
+  }
+
   /* element margins */
   /* the list element have 20px of bottom margin already */
   header {
@@ -588,7 +608,6 @@ footer .social-icons li i {
     padding-bottom: 120px;
   }
 
-  /*  .portfolio, */
   footer {
     padding: 120px 0;
   }
@@ -627,6 +646,10 @@ footer .social-icons li i {
 
   .skills-header {
     margin-bottom: 40px;
+  }
+
+  #skills h4 {
+    margin: 40px 0 10px 0;
   }
 
   figure {
@@ -773,6 +796,10 @@ footer .social-icons li i {
   .content-wrapper {
     max-width: 900px;
   }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -804,7 +831,7 @@ footer .social-icons li i {
   }
 
   .about-info h3 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     text-align: left;
   }
 
@@ -917,9 +944,9 @@ footer .social-icons li i {
     padding: 10px 10px;
   }
 
-  nav ul li a:hover {
-    background-color: #8cd2b4;
-    color: #ffe8d6;
+  nav ul li a:hover, nav #contact-link:hover {
+    background-color: #539F7E;
+    color: #ffffff;
     padding: 10px 10px;
     border-radius: 30px;
   }
