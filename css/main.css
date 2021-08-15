@@ -312,10 +312,10 @@ header nav ul li {
 
 nav ul li a {
   padding: 10px 10px;
-} 
+}
 
 nav #contact-link {
-  background-color: #E7516C;
+  background-color: #AB1732;
   color: #FFFFFF;
   padding: 10px 10px;
   border-radius: 30px;
@@ -360,6 +360,7 @@ header h2 {
   flex-direction: column;
   align-items: center;
 }
+
 .home-portfolio-piece h4 {
   font-weight: bold;
 }
@@ -930,19 +931,17 @@ footer .social-icons li i {
     width: 45%;
   }
 
-  /* These two code blocks allow a hover background-color to show in the nav on desktop */
   nav ul li a {
     padding: 10px 10px;
   }
 
-  nav ul li a:hover, nav #contact-link:hover {
-    background-color: #BA1C39;
+  nav ul li a:hover,
+  nav #contact-link:hover {
+    background-color: #8E152B;
     color: #ffffff;
     padding: 10px 10px;
     border-radius: 30px;
   }
-
-  /* End these two code blocks allow a hover background-color to show in the nav on desktop */
 
   .home-title {
     max-width: 95%;
